@@ -47,3 +47,4 @@ The project contains tests in different styles:
  * without page object (selenide_straightforward)
  * with classic _Selenium_ page object
  * with _Selenide_-style page object"# testRepo" 
+# testRepo
