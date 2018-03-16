@@ -46,4 +46,4 @@ https://vimeo.com/107647158
 The project contains tests in different styles:
  * without page object (selenide_straightforward)
  * with classic _Selenium_ page object
- * with _Selenide_-style page object
+ * with _Selenide_-style page object"# testRepo" 
