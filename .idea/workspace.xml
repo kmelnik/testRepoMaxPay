@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a522232-c076-4234-89fe-e9bbeced5314" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/GooglePage.java" afterPath="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/YourBetPages.java" />
-      <change beforePath="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/GoogleTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/YourBetTests.java" afterPath="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/YourBetTests.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -444,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521210925485</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit check open site">
+      <created>1521216821025</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1521216821025</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -537,7 +540,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1 test commit open site" />
-    <option name="LAST_COMMIT_MESSAGE" value="1 test commit open site" />
+    <MESSAGE value="commit check open site" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit check open site" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
