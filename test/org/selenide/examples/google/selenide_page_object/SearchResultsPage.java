@@ -1,16 +1,15 @@
 package org.selenide.examples.google.selenide_page_object;
 
-import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
+import org.openqa.selenium.By;
 
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
 public class SearchResultsPage {
-  public ElementsCollection getResults() {
-    return $$("#ires .g");
+  public SelenideElement getResults() {
+    return $$(By.xpath("//*[@id=\"applicationContainer\"]//div[2]/div/ul/li[1]/a/div/div")).findBy(text("КАЗИНО"));
   }
-  public SelenideElement getResult(int index) {
-    return $("#ires .g", index);
-  }
+
 }

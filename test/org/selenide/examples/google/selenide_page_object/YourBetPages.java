@@ -11,8 +11,6 @@ import static com.codeborne.selenide.Selenide.page;
 public class YourBetPages {
 
   public SearchResultsPage searchForCasinoText (String text) {
-    $(By.xpath("//*[@id=\"applicationContainer\"]//div[3]/a[1]/img")).shouldBe(visible);
-    $(By.xpath("//*[@id=\"applicationContainer\"]//div[2]/div/ul/li[1]/a/div/div")).shouldHave(text("КАЗИНО"));
     return page(SearchResultsPage.class);
   }
 }

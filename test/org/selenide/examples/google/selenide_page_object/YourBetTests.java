@@ -18,7 +18,7 @@ public class YourBetTests extends YourBetPages {
 
     YourBetPages page = open("https://yourbet.com/", YourBetPages.class);
     SearchResultsPage results = page.searchForCasinoText("КАЗИНО");
-    results.getResults();
+    results.getResults().shouldBe(visible);
 
 }
 }
