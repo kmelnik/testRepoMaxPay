@@ -4,7 +4,8 @@
     <list default="true" id="7a522232-c076-4234-89fe-e9bbeced5314" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/SearchResultsPage.java" afterPath="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/SearchResultsPage.java" />
-      <change beforePath="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/YourBetPages.java" afterPath="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/YourBetPages.java" />
+      <change beforePath="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/YourBetPages.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/YourBetTests.java" afterPath="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/YourBetTests.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="YourBetTests.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="YourBetTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/YourBetTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="19" column="46" lean-forward="false" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+            <state relative-caret-position="320">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -31,25 +32,9 @@
       <file leaf-file-name="SearchResultsPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/SearchResultsPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding>
-                <element signature="e#531#532#0" expanded="true" />
-                <element signature="e#561#562#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="YourBetPages.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/YourBetPages.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding>
-                <element signature="e#535#536#0" expanded="true" />
-                <element signature="e#581#582#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="192">
+              <caret line="21" column="42" lean-forward="true" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -81,8 +66,8 @@
         <option value="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/YourBetPages.java" />
         <option value="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/GoogleTest.java" />
         <option value="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/YourBetTests.java" />
-        <option value="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/YourBetTests.java" />
         <option value="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/YourBetPages.java" />
+        <option value="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/YourBetTests.java" />
         <option value="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/SearchResultsPage.java" />
       </list>
     </option>
@@ -126,13 +111,6 @@
               <item name="yourbet" type="462c0819:PsiDirectoryNode" />
               <item name="build" type="462c0819:PsiDirectoryNode" />
               <item name="reports" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YourBet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yourbet" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="reports" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="YourBet" type="b2602c69:ProjectViewProjectNode" />
@@ -468,39 +446,46 @@
       <option name="project" value="LOCAL" />
       <updated>1521802805513</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary=" commit check open site (refresh code with page object)">
+      <created>1521809102159</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1521809102159</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="YourBetTests - 2018.03.23 at 12h 27m 09s.xml">
-      <configuration name="YourBetTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="YourBetTests_checkOpenSite - 2018.03.23 at 11h 31m 52s.xml">
+    <history-entry file="YourBetTests_checkOpenSite - 2018.03.30 at 13h 04m 16s.xml">
       <configuration name="YourBetTests.checkOpenSite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="YourBetTests_checkOpenSite - 2018.03.23 at 11h 57m 22s.xml">
+    <history-entry file="YourBetTests_checkOpenSite - 2018.03.30 at 13h 13m 11s.xml">
       <configuration name="YourBetTests.checkOpenSite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="YourBetTests_checkOpenSite - 2018.03.23 at 12h 25m 19s.xml">
+    <history-entry file="YourBetTests_checkOpenSite - 2018.03.30 at 13h 16m 04s.xml">
       <configuration name="YourBetTests.checkOpenSite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="YourBetTests_checkOpenSite - 2018.03.23 at 12h 29m 45s.xml">
+    <history-entry file="YourBetTests_checkOpenSite - 2018.03.30 at 13h 18m 16s.xml">
       <configuration name="YourBetTests.checkOpenSite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="YourBetTests_checkOpenSite - 2018.03.23 at 14h 42m 21s.xml">
+    <history-entry file="YourBetTests_checkOpenSite - 2018.03.30 at 13h 20m 13s.xml">
       <configuration name="YourBetTests.checkOpenSite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="YourBetTests_openSite - 2018.03.16 at 17h 02m 24s.xml">
-      <configuration name="YourBetTests.openSite" configurationId="JUnit" />
+    <history-entry file="YourBetTests_checkOpenSite - 2018.03.30 at 13h 27m 15s.xml">
+      <configuration name="YourBetTests.checkOpenSite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="YourBetTests_openSite - 2018.03.16 at 17h 09m 53s.xml">
-      <configuration name="YourBetTests.openSite" configurationId="JUnit" />
+    <history-entry file="YourBetTests_checkOpenSite - 2018.03.30 at 13h 29m 09s.xml">
+      <configuration name="YourBetTests.checkOpenSite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="YourBetTests_openSite - 2018.03.16 at 17h 14m 32s.xml">
-      <configuration name="YourBetTests.openSite" configurationId="JUnit" />
+    <history-entry file="YourBetTests_checkOpenSite - 2018.03.30 at 13h 30m 02s.xml">
+      <configuration name="YourBetTests.checkOpenSite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="YourBetTests_openSite - 2018.03.16 at 17h 52m 18s.xml">
-      <configuration name="YourBetTests.openSite" configurationId="JUnit" />
+    <history-entry file="YourBetTests_checkOpenSite - 2018.03.30 at 13h 45m 25s.xml">
+      <configuration name="YourBetTests.checkOpenSite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="YourBetTests_checkOpenSite - 2018.03.30 at 13h 48m 04s.xml">
+      <configuration name="YourBetTests.checkOpenSite" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -582,10 +567,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-          <folding>
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#561#562#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -593,10 +575,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -651,10 +630,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
           <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding>
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -668,10 +644,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/org/selenide/examples/google/selenide_straightforward/GoogleTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/YourBetPages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -692,42 +684,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/SearchResultsPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        <state relative-caret-position="192">
+          <caret line="21" column="42" lean-forward="true" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/YourBetTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="19" column="46" lean-forward="false" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+        <state relative-caret-position="320">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/SearchResultsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#561#562#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/YourBetPages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
           </folding>
         </state>
       </provider>

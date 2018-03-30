@@ -10,15 +10,16 @@ import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.Selenide.page;
 
 
-public class YourBetTests extends YourBetPages {
-
+public class YourBetTests extends SearchResultsPage {
 
     @Test
     public void checkOpenSite () {
+        YourBetTests openPage = open("https://yourbet.com/", YourBetTests.class);
+    SearchResultsPage results = openPage.searchCasinoText();
+    results.searchCasinoText();
 
-    YourBetPages page = open("https://yourbet.com/", YourBetPages.class);
-    SearchResultsPage results = page.searchForCasinoText("КАЗИНО");
-    results.getResults().shouldBe(visible);
 
 }
+
+
 }
