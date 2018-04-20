@@ -7,9 +7,9 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
-import static com.codeborne.selenide.Selenide.page;
+import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Configuration.browser;
+import static com.codeborne.selenide.Selenide.*;
 
 
 public class YourBetTests extends YourBetSearchElements {
@@ -17,7 +17,7 @@ public class YourBetTests extends YourBetSearchElements {
     public void testSetUp() {
 
         //CHROME Browser
-        Configuration.browser = "chrome";
+        browser = "chrome";
         // System.setProperty("webdriver.chrome.driver", "D:\\webdriver\\chromedriver_win32\\chromedriver.exe");
         System.setProperty("selenide.browser", "Chrome");
         //FIREFOX Browser
@@ -31,12 +31,18 @@ public class YourBetTests extends YourBetSearchElements {
 
     @Test
     public void checkOpenSite() {
-        YourBetSearchElements searchElement=open("https://yourbet.com", YourBetSearchElements.class);
-        searchElement.searchLogoPresent();
+        YourBetSearchElements openURL = open("https://yourbet.com", YourBetSearchElements.class);
+        YourBetSearchElements searchLogo = openURL.searchLogoPresent();
+
+    }
+    @Test
+    public void checkLoginOnSite () {
+        YourBetSearchElements openURL = open("https://yourbet.com", YourBetSearchElements.class);
+        YourBetSearchElements searchLogo = openURL.searchLogoPresent();
+        YourBetSearchElements clickLogin = openURL.clickLoginButton();
 
 
     }
-
     @After
     public void testShutDown() {
         WebDriverRunner.clearBrowserCache();

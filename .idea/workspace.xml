@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7a522232-c076-4234-89fe-e9bbeced5314" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/SearchResultsPage.java" afterPath="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/YourBetSearchElements.java" />
+      <change beforePath="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/YourBetSearchElements.java" afterPath="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/YourBetSearchElements.java" />
       <change beforePath="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/YourBetTests.java" afterPath="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/YourBetTests.java" />
-      <change beforePath="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_straightforward/GoogleTest.java" afterPath="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_straightforward/YourBetSimpleTests.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,22 +20,12 @@
         <entry file="file://$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/YourBetTests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="326">
-              <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <caret line="41" column="70" lean-forward="true" selection-start-line="41" selection-start-column="70" selection-end-line="41" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1065#1066#0" expanded="true" />
-                <element signature="e#1116#1117#0" expanded="true" />
+                <element signature="e#1383#1384#0" expanded="true" />
+                <element signature="e#1434#1435#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="YourBetSimpleTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/org/selenide/examples/google/selenide_straightforward/YourBetSimpleTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -44,8 +33,8 @@
       <file leaf-file-name="YourBetSearchElements.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/YourBetSearchElements.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="306">
+              <caret line="44" column="56" lean-forward="true" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,6 +77,7 @@
         <option value="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_straightforward/GoogleTest.java" />
         <option value="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_straightforward/GoogleTest.java" />
         <option value="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_straightforward/YourBetSimpleTests.java" />
+        <option value="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/ActionsWithElements.java" />
         <option value="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/YourBetTests.java" />
         <option value="$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/YourBetSearchElements.java" />
       </list>
@@ -128,17 +118,6 @@
               <item name="YourBet" type="b2602c69:ProjectViewProjectNode" />
               <item name="yourbet" type="462c0819:PsiDirectoryNode" />
               <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YourBet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yourbet" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="reports" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YourBet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yourbet" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="YourBet" type="b2602c69:ProjectViewProjectNode" />
@@ -194,7 +173,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.YourBetTests.checkOpenSite">
+  <component name="RunManager" selected="JUnit.YourBetTests.checkLoginOnSite">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -215,31 +194,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-    </configuration>
-    <configuration name="GoogleTest.userCanSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="org.selenide.examples.google.selenide_page_object.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="google" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.selenide.examples.google.selenide_page_object" />
-      <option name="MAIN_CLASS_NAME" value="org.selenide.examples.google.selenide_page_object.GoogleTest" />
-      <option name="METHOD_NAME" value="userCanSearch" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
     </configuration>
     <configuration name="YourBetSimpleTests.openMainPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -280,6 +234,31 @@
       <option name="MAIN_CLASS_NAME" value="org.selenide.examples.google.selenide_page_object.YourBetTests" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="YourBetTests.checkLoginOnSite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.selenide.examples.google.selenide_page_object.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="google" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.selenide.examples.google.selenide_page_object" />
+      <option name="MAIN_CLASS_NAME" value="org.selenide.examples.google.selenide_page_object.YourBetTests" />
+      <option name="METHOD_NAME" value="checkLoginOnSite" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -402,18 +381,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.GoogleTest.userCanSearch" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.YourBetTests" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.YourBetTests.openSite" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.YourBetTests.checkOpenSite" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.YourBetSimpleTests.openMainPage" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.YourBetTests" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.YourBetTests.openSite" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.YourBetTests.checkOpenSite" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.YourBetSimpleTests.openMainPage" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.YourBetTests.checkLoginOnSite" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.YourBetTests.checkOpenSite" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.YourBetTests.checkLoginOnSite" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.YourBetTests" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.YourBetSimpleTests.openMainPage" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.YourBetTests.openSite" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.YourBetTests.checkOpenSite" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.YourBetSimpleTests.openMainPage" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.YourBetTests.openSite" />
       </list>
     </recent_temporary>
   </component>
@@ -487,39 +467,46 @@
       <option name="project" value="LOCAL" />
       <updated>1522407297773</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary=" commit check open site (refresh code with page object)">
+      <created>1524154258184</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1524154258184</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="YourBetTests - 2018.04.19 at 18h 56m 53s.xml">
-      <configuration name="YourBetTests" configurationId="JUnit" />
+    <history-entry file="YourBetTests_checkLoginOnSite - 2018.04.20 at 14h 48m 19s.xml">
+      <configuration name="YourBetTests.checkLoginOnSite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="YourBetTests_checkOpenSite - 2018.04.19 at 18h 31m 06s.xml">
-      <configuration name="YourBetTests.checkOpenSite" configurationId="JUnit" />
+    <history-entry file="YourBetTests_checkLoginOnSite - 2018.04.20 at 14h 49m 41s.xml">
+      <configuration name="YourBetTests.checkLoginOnSite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="YourBetTests_checkOpenSite - 2018.04.19 at 18h 38m 40s.xml">
-      <configuration name="YourBetTests.checkOpenSite" configurationId="JUnit" />
+    <history-entry file="YourBetTests_checkLoginOnSite - 2018.04.20 at 15h 00m 33s.xml">
+      <configuration name="YourBetTests.checkLoginOnSite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="YourBetTests_checkOpenSite - 2018.04.19 at 18h 49m 30s.xml">
-      <configuration name="YourBetTests.checkOpenSite" configurationId="JUnit" />
+    <history-entry file="YourBetTests_checkLoginOnSite - 2018.04.20 at 15h 01m 01s.xml">
+      <configuration name="YourBetTests.checkLoginOnSite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="YourBetTests_checkOpenSite - 2018.04.19 at 19h 00m 26s.xml">
-      <configuration name="YourBetTests.checkOpenSite" configurationId="JUnit" />
+    <history-entry file="YourBetTests_checkLoginOnSite - 2018.04.20 at 15h 04m 26s.xml">
+      <configuration name="YourBetTests.checkLoginOnSite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="YourBetTests_checkOpenSite - 2018.04.19 at 19h 01m 33s.xml">
-      <configuration name="YourBetTests.checkOpenSite" configurationId="JUnit" />
+    <history-entry file="YourBetTests_checkLoginOnSite - 2018.04.20 at 15h 08m 17s.xml">
+      <configuration name="YourBetTests.checkLoginOnSite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="YourBetTests_checkOpenSite - 2018.04.19 at 19h 06m 00s.xml">
-      <configuration name="YourBetTests.checkOpenSite" configurationId="JUnit" />
+    <history-entry file="YourBetTests_checkLoginOnSite - 2018.04.20 at 15h 15m 24s.xml">
+      <configuration name="YourBetTests.checkLoginOnSite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="YourBetTests_checkOpenSite - 2018.04.19 at 19h 06m 42s.xml">
-      <configuration name="YourBetTests.checkOpenSite" configurationId="JUnit" />
+    <history-entry file="YourBetTests_checkLoginOnSite - 2018.04.20 at 15h 18m 09s.xml">
+      <configuration name="YourBetTests.checkLoginOnSite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="YourBetTests_checkOpenSite - 2018.04.19 at 19h 09m 11s.xml">
-      <configuration name="YourBetTests.checkOpenSite" configurationId="JUnit" />
+    <history-entry file="YourBetTests_checkLoginOnSite - 2018.04.20 at 15h 20m 37s.xml">
+      <configuration name="YourBetTests.checkLoginOnSite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="YourBetTests_checkOpenSite - 2018.04.19 at 19h 10m 05s.xml">
-      <configuration name="YourBetTests.checkOpenSite" configurationId="JUnit" />
+    <history-entry file="YourBetTests_checkLoginOnSite - 2018.04.20 at 15h 21m 37s.xml">
+      <configuration name="YourBetTests.checkLoginOnSite" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -595,8 +582,8 @@
           <caret line="13" column="67" lean-forward="false" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1065#1066#0" expanded="true" />
-            <element signature="e#1116#1117#0" expanded="true" />
+            <element signature="e#1383#1384#0" expanded="true" />
+            <element signature="e#1434#1435#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -644,8 +631,8 @@
           <caret line="19" column="64" lean-forward="false" selection-start-line="19" selection-start-column="64" selection-end-line="19" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1065#1066#0" expanded="true" />
-            <element signature="e#1116#1117#0" expanded="true" />
+            <element signature="e#1383#1384#0" expanded="true" />
+            <element signature="e#1434#1435#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -729,10 +716,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/ActionsWithElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/YourBetSearchElements.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="306">
+          <caret line="44" column="56" lean-forward="true" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -742,11 +737,11 @@
     <entry file="file://$PROJECT_DIR$/test/org/selenide/examples/google/selenide_page_object/YourBetTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <caret line="41" column="70" lean-forward="true" selection-start-line="41" selection-start-column="70" selection-end-line="41" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1065#1066#0" expanded="true" />
-            <element signature="e#1116#1117#0" expanded="true" />
+            <element signature="e#1383#1384#0" expanded="true" />
+            <element signature="e#1434#1435#0" expanded="true" />
           </folding>
         </state>
       </provider>
