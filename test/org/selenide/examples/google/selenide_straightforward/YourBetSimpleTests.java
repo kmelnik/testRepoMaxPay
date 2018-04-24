@@ -15,8 +15,8 @@ public class YourBetSimpleTests {
   @Test
   public void openMainPage() {
     open("https://yourbet.com");
-    $(byCssSelector("#applicationContainer img")).shouldBe(visible);
-    /*$(By.name("q")).val("selenide").pressEnter();
+    /*$(byCssSelector("#applicationContainer img")).shouldBe(visible);
+    $(By.name("q")).val("selenide").pressEnter();
     $$("#ires .g").shouldHave(sizeGreaterThan(1));
     $("#ires .g").shouldBe(visible).shouldHave(
         text("Selenide: concise UI tests in Java"),

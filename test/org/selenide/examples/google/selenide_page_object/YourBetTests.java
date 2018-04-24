@@ -1,13 +1,11 @@
 package org.selenide.examples.google.selenide_page_object;
 
 
-import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Configuration.browser;
 import static com.codeborne.selenide.Selenide.*;
 
@@ -35,16 +33,21 @@ public class YourBetTests extends YourBetSearchElements {
         YourBetSearchElements searchLogo = openURL.searchLogoPresent();
 
     }
+
     @Test
-    public void checkLoginOnSite () {
+    public void loginOnPossitiveTest() {
         YourBetSearchElements openURL = open("https://yourbet.com", YourBetSearchElements.class);
         YourBetSearchElements searchLogo = openURL.searchLogoPresent();
-        YourBetSearchElements clickLogin = openURL.clickLoginButton();
-
-
+        YourBetSearchElements loginOn = openURL.loginMethod();
     }
-    @After
-    public void testShutDown() {
-        WebDriverRunner.clearBrowserCache();
-    }
+@Test
+public void loginOnNegativeTest() {
+    YourBetSearchElements openURL = open("https://yourbet.com", YourBetSearchElements.class);
+    YourBetSearchElements searchLogo = openURL.searchLogoPresent();
+    YourBetSearchElements loginOn = openURL.loginMethodNegative();
 }
+        @After
+        public void testShutDown () {
+            WebDriverRunner.clearBrowserCache();
+        }
+    }

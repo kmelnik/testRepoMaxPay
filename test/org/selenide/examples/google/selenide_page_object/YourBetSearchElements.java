@@ -24,6 +24,8 @@ public class YourBetSearchElements {
     private SelenideElement buttonEnter;
     @FindBy (css = "#applicationContainer div.item.pincode.for-desktop-view.ng-binding")
     private SelenideElement pinCodeElement;
+    @FindBy (className = "error-popup")
+    private SelenideElement popupErrorLogin;
 
     public YourBetSearchElements searchLogoPresent() {
         logoPresent.shouldBe(visible);
@@ -32,7 +34,7 @@ public class YourBetSearchElements {
 
     }
 
-    public YourBetSearchElements clickLoginButton() {
+    public YourBetSearchElements loginMethod() {
         loginButton.exists();
         loginButton.click();
         loginField.exists();
@@ -49,6 +51,18 @@ public class YourBetSearchElements {
         return page(YourBetSearchElements.class);
 
     }
+    public YourBetSearchElements loginMethodNegative() {
+        loginButton.exists();
+        loginButton.click();
+        loginField.exists();
+        loginField.setValue("ydt4");
+        passwordFiled.exists();
+        passwordFiled.setValue("Test28");
+        buttonEnter.exists();
+        buttonEnter.pressEnter();
+        popupErrorLogin.isDisplayed();
 
+        return page(YourBetSearchElements.class);
+    }
 }
 
