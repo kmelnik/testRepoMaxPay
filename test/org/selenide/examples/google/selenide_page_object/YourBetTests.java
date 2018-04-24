@@ -40,14 +40,37 @@ public class YourBetTests extends YourBetSearchElements {
         YourBetSearchElements searchLogo = openURL.searchLogoPresent();
         YourBetSearchElements loginOn = openURL.loginMethod();
     }
-@Test
-public void loginOnNegativeTest() {
-    YourBetSearchElements openURL = open("https://yourbet.com", YourBetSearchElements.class);
-    YourBetSearchElements searchLogo = openURL.searchLogoPresent();
-    YourBetSearchElements loginOn = openURL.loginMethodNegative();
-}
-        @After
-        public void testShutDown () {
-            WebDriverRunner.clearBrowserCache();
-        }
+
+    @Test
+    public void loginOnNegativeTest() {
+        YourBetSearchElements openURL = open("https://yourbet.com", YourBetSearchElements.class);
+        YourBetSearchElements searchLogo = openURL.searchLogoPresent();
+        YourBetSearchElements loginOn = openURL.loginMethodNegative();
     }
+
+    @Test
+    public void checkRegistrationTest() {
+        YourBetSearchElements openURL = open("https://yourbet.com", YourBetSearchElements.class);
+        YourBetSearchElements searchLogo = openURL.searchLogoPresent();
+        YourBetSearchElements registrationOn = openURL.checkRegistrationMethod();
+    }
+
+    @Test
+    public void checkProfileUpdate() {
+        YourBetSearchElements openURL = open("https://yourbet.com", YourBetSearchElements.class);
+        loginOnPossitiveTest();
+        YourBetSearchElements profileUpdate = openURL.profileUpdateMethod();
+    }
+
+    @Test
+    public void checkDepositByCreditCard () {
+        YourBetSearchElements openURL = open("https://yourbet.com", YourBetSearchElements.class);
+        loginOnPossitiveTest();
+        YourBetSearchElements checkDepositbyCreditCard = openURL.bankCardDepositMethod();
+
+    }
+    @After
+    public void testShutDown() {
+        WebDriverRunner.clearBrowserCache();
+    }
+}
