@@ -8,7 +8,6 @@ import static com.codeborne.selenide.Selenide.page;
 public class ActionsWithElements extends SearchElements {
 
 
-
     public ActionsWithElements searchLogoPresent() {
         logoPresent.shouldBe(visible);
 
@@ -67,6 +66,7 @@ public class ActionsWithElements extends SearchElements {
     }
 
     public ActionsWithElements profileUpdateMethod() {
+        loginMethod();
         profileAvatar.click();
         passwordFiled.clear();
         passwordFiled.setValue("Test2018");
@@ -78,6 +78,7 @@ public class ActionsWithElements extends SearchElements {
     }
 
     public ActionsWithElements bankCardDepositMethod() {
+        loginMethod();
         cashierIcon.click();
         visa_mastercard_RadioButton.click();
         fieldForSumVisaMastercard.setValue("55");
@@ -91,7 +92,7 @@ public class ActionsWithElements extends SearchElements {
         cardExpiresYear.selectOptionContainingText("2023");
         cvvField.setValue("111");
         payCardSubmitButton.pressEnter();
-        successPaymentEmulateButton.waitUntil(visible,10000);
+        successPaymentEmulateButton.waitUntil(visible, 10000);
         successPaymentEmulateButton.pressEnter();
         paymentStatus.shouldHave(exactText("CONFIRMED"));
 

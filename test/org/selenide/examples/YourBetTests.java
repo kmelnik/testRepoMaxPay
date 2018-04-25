@@ -1,10 +1,11 @@
-package org.selenide.yourbet.selenide_page_object;
+package org.selenide.examples;
 
 
 import com.codeborne.selenide.WebDriverRunner;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.selenide.yourbet.selenide_page_object.ActionsWithElements;
 
 import static com.codeborne.selenide.Configuration.browser;
 import static com.codeborne.selenide.Selenide.*;
