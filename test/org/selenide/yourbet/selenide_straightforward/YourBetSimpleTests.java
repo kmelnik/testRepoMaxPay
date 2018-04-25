@@ -1,4 +1,4 @@
-package org.selenide.examples.google.selenide_straightforward;
+package org.selenide.yourbet.selenide_straightforward;
 
 import org.junit.Test;
 import org.openqa.selenium.By;
