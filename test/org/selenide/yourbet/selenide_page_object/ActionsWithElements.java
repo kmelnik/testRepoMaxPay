@@ -1,9 +1,7 @@
 package org.selenide.yourbet.selenide_page_object;
 
 import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$$;
-import static com.codeborne.selenide.Selenide.page;
+import static com.codeborne.selenide.Selenide.*;
 
 public class ActionsWithElements extends SearchElements {
 
@@ -50,7 +48,7 @@ public class ActionsWithElements extends SearchElements {
         registrationButton.exists();
         registrationButton.click();
         emailFieldRegForm.exists();
-        emailFieldRegForm.setValue("fodsjjfds@gmail.com");
+        emailFieldRegForm.setValue("cow10@carbtc.net");
         loginRegFormField.exists();
         loginRegFormField.setValue("cow10");
         passwordFiledRegForm.exists();
@@ -64,6 +62,8 @@ public class ActionsWithElements extends SearchElements {
 
         return page(ActionsWithElements.class);
     }
+
+
 
     public ActionsWithElements profileUpdateMethod() {
         loginMethod();
@@ -99,5 +99,18 @@ public class ActionsWithElements extends SearchElements {
 
         return page(ActionsWithElements.class);
     }
+
+    public ActionsWithElements promoPageIsPresentWithBonuses() {
+        linkPromoPage.click();
+        welcomeBonusPage.shouldBe(visible);
+        bonus555Page.shouldBe(visible);
+        freespinsBonusPage.shouldBe(visible);
+        megaBonusPage.shouldBe(visible);
+
+
+        return page(ActionsWithElements.class);
+    }
+
+
 }
 

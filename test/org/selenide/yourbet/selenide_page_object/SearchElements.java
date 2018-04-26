@@ -62,8 +62,28 @@ public class SearchElements {
     public SelenideElement cvvField;
     @FindBy(id = "btn-submit")
     public SelenideElement payCardSubmitButton;
-    @FindBy (id = "success")
+    @FindBy(id = "success")
     public SelenideElement successPaymentEmulateButton;
-    @FindBy (id = "input.0")
+    @FindBy(id = "input.0")
     public SelenideElement paymentStatus;
+    @FindBy(css = "#applicationContainer > div > div > div:nth-child(1) > div > div > div.row.p-l_0.p_abslt.p_left.p_top > div > div.navigation_wrap.ng-scope > ul > li.promo > a > div > div")
+    public SelenideElement linkPromoPage;
+    @FindBy(css = "#applicationContainer > div > div > div.container.ng-scope > div > div > div.content.promos-content > div > div:nth-child(1) > div.promo-item__cover > img")
+    public SelenideElement welcomeBonusPage;
+    @FindBy(css = "#applicationContainer > div > div > div.container.ng-scope > div > div > div.content.promos-content > div > div:nth-child(2) > div.promo-item__cover > img")
+    public SelenideElement bonus555Page;
+    @FindBy (css = "#applicationContainer > div > div > div.container.ng-scope > div > div > div.content.promos-content > div > div:nth-child(3) > div.promo-item__cover > img")
+    public SelenideElement freespinsBonusPage;
+    @FindBy (css = "#applicationContainer > div > div > div.container.ng-scope > div > div > div.content.promos-content > div > div:nth-child(4) > div.promo-item__cover > img")
+    public SelenideElement megaBonusPage;
+
+
+
+
+
+
+
+
+
 }
+
