@@ -1,16 +1,20 @@
 package org.selenide.yourbet.selenide_page_object;
 
 import com.codeborne.selenide.Condition;
+
 import com.codeborne.selenide.SelenideElement;
+
+import com.codeborne.selenide.commands.ScrollTo;
 import org.openqa.selenium.support.FindBy;
 
-import static com.codeborne.selenide.Configuration.browser;
+
 import static com.codeborne.selenide.Configuration.timeout;
-import static com.codeborne.selenide.Selectors.byText;
+
 import static com.codeborne.selenide.Selenide.*;
 
 
 public class RegistrationWithConfirm extends ActionsWithElements {
+
     @FindBy(name = "mail")
     public SelenideElement loginMailFieldTempReg;
     @FindBy(name = "domain")
@@ -30,19 +34,20 @@ public class RegistrationWithConfirm extends ActionsWithElements {
         // for switching to default window
         switchTo().defaultContent();
         open("https://temp-mail.org/en/option/change/");
-        loginMailFieldTempReg.setValue("cow11");
+        loginMailFieldTempReg.setValue("selenium3");
         domainNameTempReg.selectOptionContainingText("@carbtc.net");
         saveButtonTempMail.pressEnter();
         refreshLinkTempMail.click();
         clickActivateAccountLinkTempMail.waitUntil(Condition.visible, 10000);
         clickActivateAccountLinkTempMail.click();
+        linkForConfirmAccountTempMail.scrollTo();
         linkForConfirmAccountTempMail.followLink();
-
-
-
-
+        timeout=15000;
 
 
         return page(RegistrationWithConfirm.class);
     }
+
+
+
 }

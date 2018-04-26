@@ -4,6 +4,7 @@ import com.codeborne.selenide.WebDriverRunner;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.JavascriptExecutor;
 import org.selenide.yourbet.selenide_page_object.ActionsWithElements;
 import org.selenide.yourbet.selenide_page_object.RegistrationWithConfirm;
 
@@ -18,6 +19,7 @@ public class MainPageCheckRegistrationWithConfirm extends RegistrationWithConfir
         browser = "chrome";
         // System.setProperty("webdriver.chrome.driver", "D:\\webdriver\\chromedriver_win32\\chromedriver.exe");
         System.setProperty("selenide.browser", "Chrome");
+
         //FIREFOX Browser
 
         //SAFARI Browser

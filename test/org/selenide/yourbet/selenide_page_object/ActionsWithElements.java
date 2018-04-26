@@ -1,5 +1,7 @@
 package org.selenide.yourbet.selenide_page_object;
 
+import java.util.Random;
+
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
 
@@ -45,12 +47,13 @@ public class ActionsWithElements extends SearchElements {
     }
 
     public ActionsWithElements checkRegistrationMethod() {
+
         registrationButton.exists();
         registrationButton.click();
         emailFieldRegForm.exists();
-        emailFieldRegForm.setValue("cow11@carbtc.net");
+        emailFieldRegForm.setValue("selenium3@carbtc.net");
         loginRegFormField.exists();
-        loginRegFormField.setValue("cow11");
+        loginRegFormField.setValue("selenium3");
         passwordFiledRegForm.exists();
         passwordFiledRegForm.setValue("Test2018");
         radioButtonEUR.exists();
@@ -61,6 +64,16 @@ public class ActionsWithElements extends SearchElements {
         activateAccountPopupInfo.isDisplayed();
 
         return page(ActionsWithElements.class);
+    }
+
+    public String generateString()
+    {
+        String characters = "selenium";
+        int i = 1;
+        i++;
+        String added=String.valueOf(i);
+
+        return new String(characters+added);
     }
 
 
