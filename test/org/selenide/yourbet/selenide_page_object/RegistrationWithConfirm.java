@@ -21,7 +21,7 @@ public class RegistrationWithConfirm extends ActionsWithElements {
     public SelenideElement refreshLinkTempMail;
     @FindBy (css = "#mails > tbody > tr > td:nth-child(2) > a")
     public SelenideElement clickActivateAccountLinkTempMail;
-    @FindBy (xpath="/html/body/div[2]/div/div/div[2]/div[1]/div[1]/div[3]/div/div/table/tbody/tr[3]/td/table/tbody/tr/td/div/div[2]/a")
+    @FindBy (xpath="//*//a[contains(text(),'link')]")
     public SelenideElement linkForConfirmAccountTempMail;
 
 
@@ -36,7 +36,7 @@ public class RegistrationWithConfirm extends ActionsWithElements {
         refreshLinkTempMail.click();
         clickActivateAccountLinkTempMail.waitUntil(Condition.visible, 10000);
         clickActivateAccountLinkTempMail.click();
-        $(byText("link")).followLink();
+        linkForConfirmAccountTempMail.followLink();
 
 
 
