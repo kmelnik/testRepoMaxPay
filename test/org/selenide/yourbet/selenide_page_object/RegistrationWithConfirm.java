@@ -4,9 +4,10 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.support.FindBy;
 
-import static com.codeborne.selenide.Selenide.open;
-import static com.codeborne.selenide.Selenide.page;
-import static com.codeborne.selenide.Selenide.switchTo;
+import static com.codeborne.selenide.Configuration.browser;
+import static com.codeborne.selenide.Configuration.timeout;
+import static com.codeborne.selenide.Selectors.byText;
+import static com.codeborne.selenide.Selenide.*;
 
 
 public class RegistrationWithConfirm extends ActionsWithElements {
@@ -20,7 +21,7 @@ public class RegistrationWithConfirm extends ActionsWithElements {
     public SelenideElement refreshLinkTempMail;
     @FindBy (css = "#mails > tbody > tr > td:nth-child(2) > a")
     public SelenideElement clickActivateAccountLinkTempMail;
-    @FindBy (xpath = "/html/body/div[2]/div/div/div[2]/div[1]/div[1]/div[3]/div/div/table/tbody/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td[2]/div/div[3]/p[2]/a")
+    @FindBy (xpath="/html/body/div[2]/div/div/div[2]/div[1]/div[1]/div[3]/div/div/table/tbody/tr[3]/td/table/tbody/tr/td/div/div[2]/a")
     public SelenideElement linkForConfirmAccountTempMail;
 
 
@@ -29,14 +30,14 @@ public class RegistrationWithConfirm extends ActionsWithElements {
         // for switching to default window
         switchTo().defaultContent();
         open("https://temp-mail.org/en/option/change/");
-        loginMailFieldTempReg.setValue("cow10");
+        loginMailFieldTempReg.setValue("cow11");
         domainNameTempReg.selectOptionContainingText("@carbtc.net");
         saveButtonTempMail.pressEnter();
         refreshLinkTempMail.click();
         clickActivateAccountLinkTempMail.waitUntil(Condition.visible, 10000);
         clickActivateAccountLinkTempMail.click();
-        linkForConfirmAccountTempMail.waitUntil(Condition.visible,10000);
-        linkForConfirmAccountTempMail.click();
+        $(byText("link")).followLink();
+
 
 
 

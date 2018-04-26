@@ -48,9 +48,9 @@ public class ActionsWithElements extends SearchElements {
         registrationButton.exists();
         registrationButton.click();
         emailFieldRegForm.exists();
-        emailFieldRegForm.setValue("cow10@carbtc.net");
+        emailFieldRegForm.setValue("cow11@carbtc.net");
         loginRegFormField.exists();
-        loginRegFormField.setValue("cow10");
+        loginRegFormField.setValue("cow11");
         passwordFiledRegForm.exists();
         passwordFiledRegForm.setValue("Test2018");
         radioButtonEUR.exists();
