@@ -34,11 +34,11 @@ public class RegistrationWithConfirm extends ActionsWithElements {
         // for switching to default window
         switchTo().defaultContent();
         open("https://temp-mail.org/en/option/change/");
-        loginMailFieldTempReg.setValue("selenium3");
-        domainNameTempReg.selectOptionContainingText("@carbtc.net");
+        loginMailFieldTempReg.setValue(generateString());
+        domainNameTempReg.selectOptionContainingText("@2odem.com");
         saveButtonTempMail.pressEnter();
         refreshLinkTempMail.click();
-        clickActivateAccountLinkTempMail.waitUntil(Condition.visible, 10000);
+        clickActivateAccountLinkTempMail.waitUntil(Condition.visible, 20000);
         clickActivateAccountLinkTempMail.click();
         linkForConfirmAccountTempMail.scrollTo();
         linkForConfirmAccountTempMail.followLink();

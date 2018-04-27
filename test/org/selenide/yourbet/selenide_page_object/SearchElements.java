@@ -66,9 +66,9 @@ public class SearchElements {
     public SelenideElement successPaymentEmulateButton;
     @FindBy(id = "input.0")
     public SelenideElement paymentStatus;
-    @FindBy(css = "#applicationContainer > div > div > div:nth-child(1) > div > div > div.row.p-l_0.p_abslt.p_left.p_top > div > div.navigation_wrap.ng-scope > ul > li.promo > a > div > div")
+    @FindBy (xpath = "//*//a[@href='/en/promotions']")
     public SelenideElement linkPromoPage;
-    @FindBy(css = "#applicationContainer > div > div > div.container.ng-scope > div > div > div.content.promos-content > div > div:nth-child(1) > div.promo-item__cover > img")
+    @FindBy(xpath = "//*[@id=\"applicationContainer\"]/div/div/div[2]/div/div/div[2]/div/div[1]/div[1]/img")
     public SelenideElement welcomeBonusPage;
     @FindBy(css = "#applicationContainer > div > div > div.container.ng-scope > div > div > div.content.promos-content > div > div:nth-child(2) > div.promo-item__cover > img")
     public SelenideElement bonus555Page;

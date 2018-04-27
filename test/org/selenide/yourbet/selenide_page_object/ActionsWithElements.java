@@ -51,9 +51,9 @@ public class ActionsWithElements extends SearchElements {
         registrationButton.exists();
         registrationButton.click();
         emailFieldRegForm.exists();
-        emailFieldRegForm.setValue("selenium3@carbtc.net");
+        emailFieldRegForm.setValue(generateString() + "@2odem.com");
         loginRegFormField.exists();
-        loginRegFormField.setValue("selenium3");
+        loginRegFormField.setValue(generateString());
         passwordFiledRegForm.exists();
         passwordFiledRegForm.setValue("Test2018");
         radioButtonEUR.exists();
@@ -61,21 +61,23 @@ public class ActionsWithElements extends SearchElements {
         checkBoxAgreeTerms.exists();
         checkBoxAgreeTerms.click();
         registrationButtonInForm.pressEnter();
-        activateAccountPopupInfo.isDisplayed();
+        activateAccountPopupInfo.shouldHave(text("PLEASE ACTIVATE YOUR ACCOUNT"));
 
         return page(ActionsWithElements.class);
     }
 
-    public String generateString()
-    {
+    public String generateString() {
         String characters = "selenium";
-        int i = 1;
-        i++;
-        String added=String.valueOf(i);
 
-        return new String(characters+added);
+
+        int i;
+
+        for (i=8; i ==8; i++) {
+
+        }
+        String added = String.valueOf(i);
+        return new String(characters + added);
     }
-
 
 
     public ActionsWithElements profileUpdateMethod() {
@@ -114,6 +116,7 @@ public class ActionsWithElements extends SearchElements {
     }
 
     public ActionsWithElements promoPageIsPresentWithBonuses() {
+        // linkPromoPage.scrollTo();
         linkPromoPage.click();
         welcomeBonusPage.shouldBe(visible);
         bonus555Page.shouldBe(visible);
