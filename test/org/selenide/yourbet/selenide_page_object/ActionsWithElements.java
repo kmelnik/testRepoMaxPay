@@ -70,12 +70,12 @@ public class ActionsWithElements extends SearchElements {
         String characters = "selenium";
 
 
-        int i;
+        int sum = 15;
 
-        for (i=8; i ==8; i++) {
-
+        for (int i = 1; i <= 1; i++) {
+            sum = (sum + i)+1;
         }
-        String added = String.valueOf(i);
+        String added = String.valueOf(sum);
         return new String(characters + added);
     }
 

@@ -4,8 +4,6 @@
     <list default="true" id="7a522232-c076-4234-89fe-e9bbeced5314" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/test/org/selenide/yourbet/selenide_page_object/ActionsWithElements.java" afterPath="$PROJECT_DIR$/test/org/selenide/yourbet/selenide_page_object/ActionsWithElements.java" />
-      <change beforePath="$PROJECT_DIR$/test/org/selenide/yourbet/selenide_page_object/RegistrationWithConfirm.java" afterPath="$PROJECT_DIR$/test/org/selenide/yourbet/selenide_page_object/RegistrationWithConfirm.java" />
-      <change beforePath="$PROJECT_DIR$/test/org/selenide/yourbet/selenide_page_object/SearchElements.java" afterPath="$PROJECT_DIR$/test/org/selenide/yourbet/selenide_page_object/SearchElements.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,8 +44,8 @@
       <file leaf-file-name="ActionsWithElements.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/org/selenide/yourbet/selenide_page_object/ActionsWithElements.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="74" column="23" lean-forward="false" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
+            <state relative-caret-position="213">
+              <caret line="76" column="9" lean-forward="true" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -620,38 +618,45 @@
       <option name="project" value="LOCAL" />
       <updated>1524754662417</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary=" Reg with Confirmation Test (update) 27-04">
+      <created>1524842313389</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1524842313389</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.04.27 at 17h 45m 34s.xml">
+    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.04.27 at 18h 32m 04s.xml">
       <configuration name="MainPageCheckRegistrationWithConfirm" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.04.27 at 17h 45m 59s.xml">
+    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.04.27 at 18h 32m 27s.xml">
       <configuration name="MainPageCheckRegistrationWithConfirm" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.04.27 at 18h 01m 48s.xml">
+    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.04.27 at 18h 36m 21s.xml">
       <configuration name="MainPageCheckRegistrationWithConfirm" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.04.27 at 18h 03m 36s.xml">
+    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.04.27 at 18h 37m 22s.xml">
       <configuration name="MainPageCheckRegistrationWithConfirm" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.04.27 at 18h 04m 09s.xml">
+    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.04.27 at 18h 37m 52s.xml">
       <configuration name="MainPageCheckRegistrationWithConfirm" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.04.27 at 18h 06m 12s.xml">
+    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.04.27 at 18h 38m 19s.xml">
       <configuration name="MainPageCheckRegistrationWithConfirm" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.04.27 at 18h 07m 52s.xml">
+    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.04.27 at 18h 40m 13s.xml">
       <configuration name="MainPageCheckRegistrationWithConfirm" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.04.27 at 18h 10m 02s.xml">
+    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.04.27 at 18h 41m 07s.xml">
       <configuration name="MainPageCheckRegistrationWithConfirm" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.04.27 at 18h 11m 17s.xml">
+    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.04.27 at 18h 42m 33s.xml">
       <configuration name="MainPageCheckRegistrationWithConfirm" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.04.27 at 18h 11m 44s.xml">
+    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.04.27 at 18h 43m 08s.xml">
       <configuration name="MainPageCheckRegistrationWithConfirm" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -722,7 +727,8 @@
     <MESSAGE value="updated tests. Each test has own class 25-04" />
     <MESSAGE value="updated tests. Reg with Confirmation 26-04" />
     <MESSAGE value=" Reg with Confirmation Test (update) 26-04" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Reg with Confirmation Test (update) 26-04" />
+    <MESSAGE value=" Reg with Confirmation Test (update) 27-04" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Reg with Confirmation Test (update) 27-04" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1007,8 +1013,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/org/selenide/yourbet/selenide_page_object/ActionsWithElements.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="74" column="23" lean-forward="false" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
+        <state relative-caret-position="213">
+          <caret line="76" column="9" lean-forward="true" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
