@@ -3,6 +3,8 @@ package org.selenide.yourbet.selenide_page_object;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.support.FindBy;
 
+import static com.codeborne.selenide.Selenide.$$;
+
 public class SearchElements {
     @FindBy(css = "#applicationContainer img")
     public SelenideElement logoPresent;
@@ -32,17 +34,17 @@ public class SearchElements {
     public SelenideElement checkBoxAgreeTerms;
     @FindBy(xpath = "//*[@id=\"register\"]/div/div[2]/form/div[2]/div[1]/input")
     public SelenideElement registrationButtonInForm;
-    @FindBy(xpath = "/html/body/div[8]/div/div/div/div[2]")
+    @FindBy(xpath = "//*//h5[contains (text(), 'Please follow the activation link sent to you by e-mail')]")
     public SelenideElement activateAccountPopupInfo;
     @FindBy(xpath = "//*[@id=\"applicationContainer\"]/div/div/div[1]/div/div/div[3]/div[1]/div[1]/div/div[1]/div[1]/img")
     public SelenideElement profileAvatar;
-    @FindBy(xpath = "/html/body/div[7]/div/div/div/div[2]/div[2]/div/form/div/div/div[4]/div/div[4]/div/input")
+    @FindBy(xpath = "/html/body/div[6]/div/div/div/div[2]/div[2]/div/form/div/div/div[4]/div/div[4]/div/input")
     public SelenideElement saveProfileDataButton;
     @FindBy(className = "holder-login")
     public SelenideElement saveProfilePopup;
     @FindBy(xpath = "//*[@id=\"applicationContainer\"]/div/div/div[1]/div/div/div[3]/div[3]/div")
     public SelenideElement cashierIcon;
-    @FindBy(xpath = "/html/body/div[7]/div/div/div/div[2]/div[2]/div/div/div[1]/div/div/div[1]/div/div[2]/div[3]")
+    @FindBy(xpath = "/html/body/div[6]/div/div/div/div[2]/div[2]/div/div/div[1]/div/div/div[1]/div/div[2]/div[3]")
     public SelenideElement visa_mastercard_RadioButton;
     @FindBy(id = "profile-deposit-amount")
     public SelenideElement fieldForSumVisaMastercard;

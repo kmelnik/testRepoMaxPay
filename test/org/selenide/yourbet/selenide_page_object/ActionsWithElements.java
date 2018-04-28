@@ -61,7 +61,7 @@ public class ActionsWithElements extends SearchElements {
         checkBoxAgreeTerms.exists();
         checkBoxAgreeTerms.click();
         registrationButtonInForm.pressEnter();
-        activateAccountPopupInfo.shouldHave(text("PLEASE ACTIVATE YOUR ACCOUNT"));
+        activateAccountPopupInfo.shouldBe(visible);
 
         return page(ActionsWithElements.class);
     }
@@ -70,7 +70,7 @@ public class ActionsWithElements extends SearchElements {
         String characters = "selenium";
 
 
-        int sum = 15;
+        int sum = 19;
 
         for (int i = 1; i <= 1; i++) {
             sum = (sum + i)+1;
