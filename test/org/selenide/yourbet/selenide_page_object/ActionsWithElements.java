@@ -71,7 +71,7 @@ public class ActionsWithElements extends SearchElements {
   public String generateString() {
         final Random random = new Random();
 
-        String characters = "selenide";
+        String characters = "selenid";
 
         String result = "";
 
@@ -79,7 +79,7 @@ public class ActionsWithElements extends SearchElements {
             result = String.valueOf(random.nextInt(20));
         }
 
-        return new String(characters + result);
+        return characters+result;
 
     }
 
