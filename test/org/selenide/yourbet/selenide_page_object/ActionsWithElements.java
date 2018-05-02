@@ -1,7 +1,8 @@
 package org.selenide.yourbet.selenide_page_object;
 
-import java.util.ArrayList;
 import java.util.Random;
+
+import org.apache.commons.lang3.RandomStringUtils;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
@@ -52,7 +53,7 @@ public class ActionsWithElements extends SearchElements {
         registrationButton.exists();
         registrationButton.click();
         emailFieldRegForm.exists();
-        emailFieldRegForm.setValue(generateString() + "@2odem.com");
+        emailFieldRegForm.setValue(email + "@2odem.com");
         loginRegFormField.exists();
         loginRegFormField.setValue(generateString());
         passwordFiledRegForm.exists();
@@ -67,24 +68,18 @@ public class ActionsWithElements extends SearchElements {
         return page(ActionsWithElements.class);
     }
 
+    int length = 3;
+    String email = "mail" + RandomStringUtils.randomNumeric(length);
 
-        public static String generateString() {
-            final Random random = new Random();
-            String name = "selend";
-            int data = 2;
-            String result  = String.valueOf(data);
-            return name+result;
-        /*final Random random = new Random();
+    public static String generateString() {
+        final Random random = new Random();
+        String name = "selend";
+        String data = String.valueOf(random.nextInt(100));
+        String result = String.valueOf(data);
+        return name + result;
 
-        String characters = "selenid";
 
-        String result;
-            result = String.valueOf(random.nextInt(100));
-
-        return characters+result;*/
-
-            }
-
+    }
 
 
     public ActionsWithElements profileUpdateMethod() {

@@ -27,7 +27,7 @@ public class RegistrationWithConfirm extends ActionsWithElements {
     public SelenideElement clickActivateAccountLinkTempMail;
     @FindBy (xpath="//*//a[contains(text(),'link')]")
     public SelenideElement linkForConfirmAccountTempMail;
-    @FindBy (xpath = "//*//b[contains(text(),'Congratulations!')]")
+    @FindBy (xpath = "/html/body/div[6]/div/div/div/div[2]/span")
     public SelenideElement congratulationsRegPopup;
 
 
@@ -35,7 +35,7 @@ public class RegistrationWithConfirm extends ActionsWithElements {
         checkRegistrationMethod();
         switchTo().defaultContent();
         open("https://temp-mail.org/en/option/change/");
-        loginMailFieldTempReg.setValue(generateString());
+        loginMailFieldTempReg.setValue(email);
         domainNameTempReg.selectOptionContainingText("@2odem.com");
         saveButtonTempMail.pressEnter();
         refreshLinkTempMail.click();
