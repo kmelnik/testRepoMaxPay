@@ -68,15 +68,23 @@ public class ActionsWithElements extends SearchElements {
 
     public String generateString() {
         String characters = "selenium";
+        final Random random = new Random();
 
 
-        int sum = 20;
-        int sum2 =1000;
-        int random_number = sum + (int) (Math.random() * sum2);
+        int random_number = random.nextInt(500);
+        int random_number_sum = random_number;
 
-       /* for (int i = 1; i <= 1; i++) {
-            sum = sum + i;
-        }*/
+       for (int i = 1; i <= 1; i++) {
+            random_number_sum = random_number_sum+ i;
+        }
+
+       /* String result = "";
+
+        for(int i = 0; i < 10; i++){
+            result += String.valueOf(myRandom.nextInt()) + "\n";
+        }
+
+        mInfoTextView.setText(result);*/
         String added = String.valueOf(random_number);
         return new String(characters + added);
     }

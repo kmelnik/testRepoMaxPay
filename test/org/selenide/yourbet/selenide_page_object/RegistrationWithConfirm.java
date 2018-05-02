@@ -31,7 +31,6 @@ public class RegistrationWithConfirm extends ActionsWithElements {
 
     public RegistrationWithConfirm checkRegistrationMethodWithConfirm() {
         checkRegistrationMethod();
-        // for switching to default window
         switchTo().defaultContent();
         open("https://temp-mail.org/en/option/change/");
         loginMailFieldTempReg.setValue(generateString());
