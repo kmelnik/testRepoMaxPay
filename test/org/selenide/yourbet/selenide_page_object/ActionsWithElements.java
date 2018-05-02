@@ -1,5 +1,6 @@
 package org.selenide.yourbet.selenide_page_object;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 import static com.codeborne.selenide.Condition.*;
@@ -66,27 +67,20 @@ public class ActionsWithElements extends SearchElements {
         return page(ActionsWithElements.class);
     }
 
-    public String generateString() {
-        String characters = "selenium";
+
+  public String generateString() {
         final Random random = new Random();
 
+        String characters = "selenide";
 
-        int random_number = random.nextInt(500);
-        int random_number_sum = random_number;
+        String result = "";
 
-       for (int i = 1; i <= 1; i++) {
-            random_number_sum = random_number_sum+ i;
+        for(int i = 0; i < 20; i++){
+            result = String.valueOf(random.nextInt(20));
         }
 
-       /* String result = "";
+        return new String(characters + result);
 
-        for(int i = 0; i < 10; i++){
-            result += String.valueOf(myRandom.nextInt()) + "\n";
-        }
-
-        mInfoTextView.setText(result);*/
-        String added = String.valueOf(random_number);
-        return new String(characters + added);
     }
 
 

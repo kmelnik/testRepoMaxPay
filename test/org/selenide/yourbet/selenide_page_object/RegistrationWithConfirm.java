@@ -33,7 +33,7 @@ public class RegistrationWithConfirm extends ActionsWithElements {
         checkRegistrationMethod();
         switchTo().defaultContent();
         open("https://temp-mail.org/en/option/change/");
-        loginMailFieldTempReg.setValue(generateString());
+        loginMailFieldTempReg.setValue(this.generateString());
         domainNameTempReg.selectOptionContainingText("@2odem.com");
         saveButtonTempMail.pressEnter();
         refreshLinkTempMail.click();
