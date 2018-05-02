@@ -68,20 +68,22 @@ public class ActionsWithElements extends SearchElements {
     }
 
 
-  public String generateString() {
-        final Random random = new Random();
+        public static String generateString() {
+            String name = "selend";
+            int data = 2;
+            String result  = String.valueOf(data);
+            return name+result;
+        /*final Random random = new Random();
 
         String characters = "selenid";
 
-        String result = "";
+        String result;
+            result = String.valueOf(random.nextInt(100));
 
-        for(int i = 0; i < 20; i++){
-            result = String.valueOf(random.nextInt(20));
-        }
+        return characters+result;*/
 
-        return characters+result;
+            }
 
-    }
 
 
     public ActionsWithElements profileUpdateMethod() {

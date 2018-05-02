@@ -27,6 +27,8 @@ public class RegistrationWithConfirm extends ActionsWithElements {
     public SelenideElement clickActivateAccountLinkTempMail;
     @FindBy (xpath="//*//a[contains(text(),'link')]")
     public SelenideElement linkForConfirmAccountTempMail;
+    @FindBy (xpath = "//*//b[contains(text(),'Congratulations!')]")
+    public SelenideElement congratulationsRegPopup;
 
 
     public RegistrationWithConfirm checkRegistrationMethodWithConfirm() {
@@ -42,6 +44,8 @@ public class RegistrationWithConfirm extends ActionsWithElements {
         linkForConfirmAccountTempMail.scrollTo();
         linkForConfirmAccountTempMail.followLink();
         timeout=15000;
+        congratulationsRegPopup.shouldHave(Condition.text("Congratulations!"));
+
 
 
         return page(RegistrationWithConfirm.class);
