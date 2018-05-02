@@ -69,6 +69,7 @@ public class ActionsWithElements extends SearchElements {
 
 
         public static String generateString() {
+            final Random random = new Random();
             String name = "selend";
             int data = 2;
             String result  = String.valueOf(data);
