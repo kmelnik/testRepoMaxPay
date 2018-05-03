@@ -42,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActionsWithElements.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ActionsWithElements.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/org/selenide/yourbet/selenide_page_object/ActionsWithElements.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+            <state relative-caret-position="160">
+              <caret line="73" column="43" lean-forward="true" selection-start-line="73" selection-start-column="43" selection-end-line="73" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegistrationWithConfirm.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RegistrationWithConfirm.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/org/selenide/yourbet/selenide_page_object/RegistrationWithConfirm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="29" column="63" lean-forward="false" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
+            <state relative-caret-position="38">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,20 +69,8 @@
       <file leaf-file-name="MainPageCheckRegistrationWithConfirm.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/org/selenide/yourbet/selenide_yourbet_tests/MainPageCheckRegistrationWithConfirm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
+            <state relative-caret-position="122">
               <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchElements.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/org/selenide/yourbet/selenide_page_object/SearchElements.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="27" column="27" lean-forward="false" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,8 +127,8 @@
         <option value="$PROJECT_DIR$/test/org/selenide/yourbet/selenide_yourbet_tests/PromoPageIsPresent.java" />
         <option value="$PROJECT_DIR$/test/org/selenide/yourbet/selenide_yourbet_tests/MainPageCheckRegistrationWithConfirm.java" />
         <option value="$PROJECT_DIR$/test/org/selenide/yourbet/selenide_page_object/SearchElements.java" />
-        <option value="$PROJECT_DIR$/test/org/selenide/yourbet/selenide_page_object/RegistrationWithConfirm.java" />
         <option value="$PROJECT_DIR$/test/org/selenide/yourbet/selenide_page_object/ActionsWithElements.java" />
+        <option value="$PROJECT_DIR$/test/org/selenide/yourbet/selenide_page_object/RegistrationWithConfirm.java" />
       </list>
     </option>
   </component>
@@ -255,7 +243,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MainPageCheckRegistrationWithConfirm">
+  <component name="RunManager" selected="JUnit.org.selenide.yourbet.selenide_yourbet_tests in google">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -314,31 +302,6 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="org.selenide.yourbet.selenide_yourbet_tests" />
       <option name="MAIN_CLASS_NAME" value="org.selenide.yourbet.selenide_yourbet_tests.MainPageCheckRegistrationWithConfirm" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="MainPageLoginPossitiveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="org.selenide.yourbet.selenide_yourbet_tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="google" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.selenide.yourbet.selenide_yourbet_tests" />
-      <option name="MAIN_CLASS_NAME" value="org.selenide.yourbet.selenide_yourbet_tests.MainPageLoginPossitiveTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -422,6 +385,31 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration name="org.selenide.yourbet.selenide_yourbet_tests in google" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.selenide.yourbet.selenide_yourbet_tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="google" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.selenide.yourbet.selenide_yourbet_tests" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -464,18 +452,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.MainPageCheckRegistrationWithConfirm" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.MainPageLoginPossitiveTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ProfilePageCheckProfileUpdateTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.PromoPageIsPresent" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.MainPageCheckRegistrationTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ProfilePageCheckProfileUpdateTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.PromoPageIsPresent" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MainPageCheckRegistrationTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.org.selenide.yourbet.selenide_yourbet_tests in google" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.MainPageCheckRegistrationWithConfirm" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MainPageCheckRegistrationTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.PromoPageIsPresent" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ProfilePageCheckProfileUpdateTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.MainPageLoginPossitiveTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.org.selenide.yourbet.selenide_yourbet_tests in google" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MainPageCheckRegistrationWithConfirm" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MainPageCheckRegistrationTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.PromoPageIsPresent" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ProfilePageCheckProfileUpdateTest" />
       </list>
     </recent_temporary>
   </component>
@@ -682,39 +670,46 @@
       <option name="project" value="LOCAL" />
       <updated>1525279161970</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="random login Reg test 02-05-2018 (final)">
+      <created>1525288074654</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1525288074654</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.05.02 at 18h 58m 56s.xml">
+    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.05.03 at 11h 59m 22s.xml">
       <configuration name="MainPageCheckRegistrationWithConfirm" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.05.02 at 19h 00m 11s.xml">
+    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.05.03 at 12h 19m 31s.xml">
       <configuration name="MainPageCheckRegistrationWithConfirm" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.05.02 at 19h 01m 33s.xml">
+    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.05.03 at 12h 20m 41s.xml">
       <configuration name="MainPageCheckRegistrationWithConfirm" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.05.02 at 19h 02m 06s.xml">
+    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.05.03 at 12h 23m 00s.xml">
       <configuration name="MainPageCheckRegistrationWithConfirm" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.05.02 at 19h 08m 39s.xml">
+    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.05.03 at 12h 25m 24s.xml">
       <configuration name="MainPageCheckRegistrationWithConfirm" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.05.02 at 19h 36m 59s.xml">
+    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.05.03 at 12h 27m 36s.xml">
       <configuration name="MainPageCheckRegistrationWithConfirm" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.05.02 at 21h 52m 12s.xml">
+    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.05.03 at 12h 28m 57s.xml">
       <configuration name="MainPageCheckRegistrationWithConfirm" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.05.02 at 21h 55m 47s.xml">
+    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.05.03 at 12h 31m 33s.xml">
       <configuration name="MainPageCheckRegistrationWithConfirm" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.05.02 at 22h 03m 45s.xml">
+    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.05.03 at 12h 32m 59s.xml">
       <configuration name="MainPageCheckRegistrationWithConfirm" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainPageCheckRegistrationWithConfirm - 2018.05.02 at 22h 05m 53s.xml">
-      <configuration name="MainPageCheckRegistrationWithConfirm" configurationId="JUnit" />
+    <history-entry file="org_selenide_yourbet_selenide_yourbet_tests_in_google - 2018.05.03 at 12h 34m 53s.xml">
+      <configuration name="org.selenide.yourbet.selenide_yourbet_tests in google" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -788,7 +783,8 @@
     <MESSAGE value="Updated locators in tests 28-04-2018" />
     <MESSAGE value="random login Reg test 28-04-2018" />
     <MESSAGE value="random login Reg test 02-05-2018" />
-    <option name="LAST_COMMIT_MESSAGE" value="random login Reg test 02-05-2018" />
+    <MESSAGE value="random login Reg test 02-05-2018 (final)" />
+    <option name="LAST_COMMIT_MESSAGE" value="random login Reg test 02-05-2018 (final)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1034,7 +1030,7 @@
     <entry file="file://$PROJECT_DIR$/test/org/selenide/yourbet/selenide_page_object/SearchElements.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="101">
-          <caret line="27" column="27" lean-forward="false" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+          <caret line="37" column="27" lean-forward="false" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1051,9 +1047,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/org/selenide/yourbet/selenide_page_object/ActionsWithElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="73" column="43" lean-forward="true" selection-start-line="73" selection-start-column="43" selection-end-line="73" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/org/selenide/yourbet/selenide_yourbet_tests/MainPageCheckRegistrationWithConfirm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
+        <state relative-caret-position="122">
           <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1063,18 +1069,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/org/selenide/yourbet/selenide_page_object/RegistrationWithConfirm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="29" column="63" lean-forward="false" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/org/selenide/yourbet/selenide_page_object/ActionsWithElements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+        <state relative-caret-position="38">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -69,11 +69,11 @@ public class ActionsWithElements extends SearchElements {
     }
 
     int length = 3;
-    String email = "mail" + RandomStringUtils.randomNumeric(length);
+    String email = "automail" + RandomStringUtils.randomNumeric(length);
 
     public static String generateString() {
         final Random random = new Random();
-        String name = "selend";
+        String name = "selenda";
         String data = String.valueOf(random.nextInt(100));
         String result = String.valueOf(data);
         return name + result;
