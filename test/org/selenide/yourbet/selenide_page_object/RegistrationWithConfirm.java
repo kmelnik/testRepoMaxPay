@@ -29,7 +29,6 @@ public class RegistrationWithConfirm extends ActionsWithElements {
     public SelenideElement linkForConfirmAccountTempMail;
 
 
-
     public RegistrationWithConfirm checkRegistrationMethodWithConfirm() {
         checkRegistrationMethod();
         switchTo().defaultContent();

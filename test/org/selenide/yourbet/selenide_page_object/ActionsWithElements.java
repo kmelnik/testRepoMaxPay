@@ -74,7 +74,7 @@ public class ActionsWithElements extends SearchElements {
     public static String generateString() {
         final Random random = new Random();
         String name = "selenda";
-        String data = String.valueOf(random.nextInt(100));
+        String data = String.valueOf(random.nextInt(1000));
         String result = String.valueOf(data);
         return name + result;
 
