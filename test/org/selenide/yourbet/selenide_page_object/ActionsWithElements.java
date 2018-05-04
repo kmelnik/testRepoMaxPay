@@ -1,16 +1,11 @@
 package org.selenide.yourbet.selenide_page_object;
 
-import java.io.IOException;
-import java.util.Map;
 import java.util.Random;
 
 import org.apache.commons.lang3.RandomStringUtils;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
-import static org.selenide.yourbet.configProperties.DataConfig.getCfgValue;
-
-import org.selenide.yourbet.configProperties.ExelDriver;
 
 public class ActionsWithElements extends SearchElements {
 

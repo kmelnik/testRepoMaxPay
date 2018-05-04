@@ -4,14 +4,10 @@ import com.codeborne.selenide.WebDriverRunner;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.selenide.yourbet.configProperties.ExelDriver;
 import org.selenide.yourbet.selenide_page_object.ActionsWithElements;
-
-import java.util.Map;
 
 import static com.codeborne.selenide.Configuration.browser;
 import static com.codeborne.selenide.Selenide.open;
-import static org.selenide.yourbet.configProperties.DataConfig.getCfgValue;
 
 public class MainPageLoginPossitiveTest extends ActionsWithElements {
 
@@ -34,7 +30,7 @@ public class MainPageLoginPossitiveTest extends ActionsWithElements {
     }
     @Test
     public void loginOnPossitiveTest() {
-        ActionsWithElements openURL = open("https://test.yourbet.com", ActionsWithElements.class);
+        ActionsWithElements openURL = open(getTestProperty("url"), ActionsWithElements.class);
         ActionsWithElements searchLogo = openURL.searchLogoPresent();
         ActionsWithElements loginOn = openURL.loginMethod();
     }

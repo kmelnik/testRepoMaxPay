@@ -2,10 +2,11 @@ package org.selenide.yourbet.selenide_page_object;
 
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.support.FindBy;
+import org.selenide.yourbet.configProperties.DataConfig;
 
 import static com.codeborne.selenide.Selenide.$$;
 
-public class SearchElements {
+public class SearchElements extends DataConfig {
     @FindBy(css = "#applicationContainer img")
     public SelenideElement logoPresent;
     @FindBy(xpath = "//*[@id=\"applicationContainer\"]/div/div/div[1]/div/div/div[3]/div[2]/div[2]/div")
