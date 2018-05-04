@@ -40,7 +40,7 @@ public class SearchElements {
     public SelenideElement profileAvatar;
     @FindBy(xpath = "/html/body/div[6]/div/div/div/div[2]/div[2]/div/form/div/div/div[4]/div/div[4]/div/input")
     public SelenideElement saveProfileDataButton;
-    @FindBy(className = "holder-login")
+    @FindBy(className = "gap")
     public SelenideElement saveProfilePopup;
     @FindBy(xpath = "//*[@id=\"applicationContainer\"]/div/div/div[1]/div/div/div[3]/div[3]/div")
     public SelenideElement cashierIcon;

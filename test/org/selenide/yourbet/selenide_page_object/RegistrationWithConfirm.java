@@ -42,6 +42,7 @@ public class RegistrationWithConfirm extends ActionsWithElements {
         linkForConfirmAccountTempMail.scrollTo();
         linkForConfirmAccountTempMail.followLink();
         timeout=15000;
+        profileAvatar.isDisplayed();
 
 
 
