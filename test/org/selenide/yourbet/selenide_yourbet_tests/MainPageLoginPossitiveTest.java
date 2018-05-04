@@ -4,14 +4,20 @@ import com.codeborne.selenide.WebDriverRunner;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.selenide.yourbet.configProperties.ExelDriver;
 import org.selenide.yourbet.selenide_page_object.ActionsWithElements;
+
+import java.util.Map;
 
 import static com.codeborne.selenide.Configuration.browser;
 import static com.codeborne.selenide.Selenide.open;
+import static org.selenide.yourbet.configProperties.DataConfig.getCfgValue;
 
 public class MainPageLoginPossitiveTest extends ActionsWithElements {
+
+
     @Before
-    public void testSetUp() {
+    public void testSetUp()  {
 
         //CHROME Browser
         browser = "chrome";
@@ -24,6 +30,7 @@ public class MainPageLoginPossitiveTest extends ActionsWithElements {
         //IE Browser
 
         //EDGE Browser
+
     }
     @Test
     public void loginOnPossitiveTest() {

@@ -2,13 +2,14 @@ package org.selenide.yourbet.configProperties;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Map;
 import java.util.Properties;
 
 /*
  *  That class provides static methods for getting values from Config and UI mapping files
  */
 public class DataConfig {
-    private static String cfgFile="test/org/selenide/yourbet/configProperties/config.properties";
+    public static String cfgFile="test/org/selenide/yourbet/configProperties/config.properties";
    // private static String uiMappingFile="src/main/java/UIMapping.properties";
 
     /*
