@@ -27,7 +27,7 @@ public class ProfilePageCheckProfileUpdateTest extends ActionsWithElements {
     }
     @Test
     public void checkProfileUpdate() {
-        ActionsWithElements openURL = open("https://test.yourbet.com", ActionsWithElements.class);
+        ActionsWithElements openURL = open(getTestProperty("url"), ActionsWithElements.class);
         ActionsWithElements searchLogo = openURL.searchLogoPresent();
         ActionsWithElements profileUpdate = openURL.profileUpdateMethod();
     }

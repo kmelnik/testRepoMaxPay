@@ -27,7 +27,7 @@ public class MainPageLoginNegativeTest extends ActionsWithElements {
     }
     @Test
     public void loginOnNegativeTest() {
-        ActionsWithElements openURL = open("https://test.yourbet.com", ActionsWithElements.class);
+        ActionsWithElements openURL = open(getTestProperty("url"), ActionsWithElements.class);
         ActionsWithElements searchLogo = openURL.searchLogoPresent();
         ActionsWithElements loginOn = openURL.loginMethodNegative();
     }

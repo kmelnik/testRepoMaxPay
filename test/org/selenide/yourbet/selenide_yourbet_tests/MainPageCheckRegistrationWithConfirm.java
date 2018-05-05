@@ -30,7 +30,7 @@ public class MainPageCheckRegistrationWithConfirm extends RegistrationWithConfir
     }
     @Test
     public void checkRegistrationWithConfirm () {
-        RegistrationWithConfirm openURL = open("https://test.yourbet.com", RegistrationWithConfirm.class);
+        RegistrationWithConfirm openURL = open(getTestProperty("url"), RegistrationWithConfirm.class);
         RegistrationWithConfirm checkRegistrationMethodWithConfirm = openURL.checkRegistrationMethodWithConfirm();
 
     }

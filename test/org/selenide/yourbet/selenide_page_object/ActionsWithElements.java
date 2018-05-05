@@ -21,13 +21,13 @@ public class ActionsWithElements extends SearchElements {
         loginButton.exists();
         loginButton.click();
         loginField.exists();
-        loginField.setValue("testyb4");
+        loginField.setValue(getTestProperty("positive_login1"));
         passwordFiled.exists();
-        passwordFiled.setValue("Test2018");
+        passwordFiled.setValue(getTestProperty("positive_password1"));
         buttonEnter.exists();
         buttonEnter.pressEnter();
         pinCodeElement.isDisplayed();
-        pinCodeElement.shouldHave(text("PIN:76860238"));
+        pinCodeElement.shouldHave(text(getTestProperty("PIN_FOR_LOGIN1")));
 
 
         return page(ActionsWithElements.class);
@@ -38,9 +38,9 @@ public class ActionsWithElements extends SearchElements {
         loginButton.exists();
         loginButton.click();
         loginField.exists();
-        loginField.setValue("ydt4");
+        loginField.setValue(getTestProperty("negative_login1"));
         passwordFiled.exists();
-        passwordFiled.setValue("Test28");
+        passwordFiled.setValue(getTestProperty("negative_password1"));
         buttonEnter.exists();
         buttonEnter.pressEnter();
         popupErrorLogin.isDisplayed();
@@ -57,7 +57,7 @@ public class ActionsWithElements extends SearchElements {
         loginRegFormField.exists();
         loginRegFormField.setValue(generateString());
         passwordFiledRegForm.exists();
-        passwordFiledRegForm.setValue("Test2018");
+        passwordFiledRegForm.setValue(getTestProperty("positive_password1"));
         radioButtonEUR.exists();
         radioButtonEUR.click();
         checkBoxAgreeTerms.exists();
@@ -69,11 +69,11 @@ public class ActionsWithElements extends SearchElements {
     }
 
     int length = 3;
-    String email = "automail" + RandomStringUtils.randomNumeric(length);
+    String email = getTestProperty("part_of_email_1") + RandomStringUtils.randomNumeric(length);
 
     public static String generateString() {
         final Random random = new Random();
-        String name = "selenda";
+        String name = getTestProperty("part_of_login_1");
         String data = String.valueOf(random.nextInt(1000));
         String result = String.valueOf(data);
         return name + result;

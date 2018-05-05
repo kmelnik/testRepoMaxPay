@@ -29,7 +29,7 @@ public class MainPageCheckOpenSite extends ActionsWithElements {
 
     @Test
     public void checkOpenSite() {
-        ActionsWithElements openURL = open("https://test.yourbet.com", ActionsWithElements.class);
+        ActionsWithElements openURL = open(getTestProperty("url"), ActionsWithElements.class);
         ActionsWithElements searchLogo = openURL.searchLogoPresent();
 
     }

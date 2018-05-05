@@ -27,7 +27,7 @@ public class CashPageCheckDepositByCreditCard extends ActionsWithElements {
     }
     @Test
     public void checkDepositByCreditCard () {
-        ActionsWithElements openURL = open("https://test.yourbet.com", ActionsWithElements.class);
+        ActionsWithElements openURL = open(getTestProperty("url"), ActionsWithElements.class);
         ActionsWithElements searchLogo = openURL.searchLogoPresent();
         ActionsWithElements checkDepositbyCreditCard = openURL.bankCardDepositMethod();
 
