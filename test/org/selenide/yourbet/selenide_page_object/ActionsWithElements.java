@@ -53,7 +53,7 @@ public class ActionsWithElements extends SearchElements {
         registrationButton.exists();
         registrationButton.click();
         emailFieldRegForm.exists();
-        emailFieldRegForm.setValue(email + "@2odem.com");
+        emailFieldRegForm.setValue(partOfEmail + getTestProperty("domain_email"));
         loginRegFormField.exists();
         loginRegFormField.setValue(generateString());
         passwordFiledRegForm.exists();
@@ -69,7 +69,7 @@ public class ActionsWithElements extends SearchElements {
     }
 
     int length = 3;
-    String email = getTestProperty("part_of_email_1") + RandomStringUtils.randomNumeric(length);
+    String partOfEmail = getTestProperty("part_of_email_1") + RandomStringUtils.randomNumeric(length);
 
     public static String generateString() {
         final Random random = new Random();
@@ -86,7 +86,7 @@ public class ActionsWithElements extends SearchElements {
         loginMethod();
         profileAvatar.click();
         passwordFiled.clear();
-        passwordFiled.setValue("Test2018");
+        passwordFiled.setValue(getTestProperty("positive_password1"));
         saveProfileDataButton.waitUntil(enabled, 10000);
         saveProfileDataButton.pressEnter();
         saveProfilePopup.isDisplayed();
@@ -98,16 +98,16 @@ public class ActionsWithElements extends SearchElements {
         loginMethod();
         cashierIcon.click();
         visa_mastercard_RadioButton.click();
-        fieldForSumVisaMastercard.setValue("55");
+        fieldForSumVisaMastercard.setValue(getTestProperty("sum_in_field_BankCard"));
         depositButtonVisaMastercard.pressEnter();
         cardPaySumPresent.shouldHave(exactText("55.00 EUR"));
-        inputCardNumberField.setValue("4000000000000002");
-        inputCardHolderField.setValue("Kostyantyn Melnyk");
+        inputCardNumberField.setValue(getTestProperty("test_BankCard_number"));
+        inputCardHolderField.setValue(getTestProperty("test_cardHolder_name"));
         cardExpiresMonth.click();
-        cardExpiresMonth.selectOptionContainingText("09");
+        cardExpiresMonth.selectOptionContainingText(getTestProperty("card_Expires_Month"));
         cardExpiresYear.click();
-        cardExpiresYear.selectOptionContainingText("2023");
-        cvvField.setValue("111");
+        cardExpiresYear.selectOptionContainingText(getTestProperty("card_Expires_Year"));
+        cvvField.setValue(getTestProperty("cvv_data_test"));
         payCardSubmitButton.pressEnter();
         successPaymentEmulateButton.waitUntil(visible, 10000);
         successPaymentEmulateButton.pressEnter();

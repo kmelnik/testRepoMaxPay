@@ -4,7 +4,6 @@ import com.codeborne.selenide.Condition;
 
 import com.codeborne.selenide.SelenideElement;
 
-import com.codeborne.selenide.commands.ScrollTo;
 import org.openqa.selenium.support.FindBy;
 
 
@@ -32,9 +31,9 @@ public class RegistrationWithConfirm extends ActionsWithElements {
     public RegistrationWithConfirm checkRegistrationMethodWithConfirm() {
         checkRegistrationMethod();
         switchTo().defaultContent();
-        open("https://temp-mail.org/en/option/change/");
-        loginMailFieldTempReg.setValue(email);
-        domainNameTempReg.selectOptionContainingText("@2odem.com");
+        open(getTestProperty("url_temp_email"));
+        loginMailFieldTempReg.setValue(partOfEmail);
+        domainNameTempReg.selectOptionContainingText(getTestProperty("domain_email"));
         saveButtonTempMail.pressEnter();
         refreshLinkTempMail.click();
         clickActivateAccountLinkTempMail.waitUntil(Condition.visible, 20000);
