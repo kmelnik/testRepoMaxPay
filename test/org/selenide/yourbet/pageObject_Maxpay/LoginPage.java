@@ -52,7 +52,7 @@ public class LoginPage {
         passwordFieldForLogin.setValue(getTestProperty("positive_password"));
         buttonSignIn.isDisplayed();
         buttonSignIn.pressEnter();
-        errorMessege.shouldHave(text("Password or email are incorrect"));
+        errorMessege.shouldHave(text(getTestProperty("login_Error_Message")));
 
         return page(LoginPage.class);
     }
