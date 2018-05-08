@@ -11,7 +11,7 @@ public class DataConfigMaxPay {
 
     static {
         try {
-            fileInputStream = new FileInputStream("test/org/selenide/yourbet/config_Properties_MaxPay/config.Properties.MaxPay");
+            fileInputStream = new FileInputStream("test/org/selenide/yourbet/config_Properties_MaxPay/config.MaxPay.properties");
             PROPERTIES = new Properties();
             PROPERTIES.load(fileInputStream);
         } catch (IOException e) {

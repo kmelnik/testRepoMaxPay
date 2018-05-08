@@ -21,10 +21,12 @@ public class LoginPage {
     SelenideElement passwordFieldForLogin;
     @FindBy(css = "button")
     SelenideElement buttonSignIn;
-    @FindBy (id="setting")
+    @FindBy(id = "setting")
     SelenideElement settingDropBox;
-    @FindBy (xpath = "//*[@id=\"header-navbar\"]//div/ul//span")
+    @FindBy(xpath = "//*[@id=\"header-navbar\"]//div/ul//span")
     SelenideElement displayedLoginEmail;
+    @FindBy (css="div > p")
+    SelenideElement errorMessege;
 
     public LoginPage loginPositiveTestMethod() {
         logoMaxPay.shouldBe(visible);
@@ -34,7 +36,7 @@ public class LoginPage {
         passwordFieldForLogin.setValue(getTestProperty("positive_password"));
         buttonSignIn.isDisplayed();
         buttonSignIn.pressEnter();
-        timeout=15000;
+        timeout = 15000;
         settingDropBox.isDisplayed();
         settingDropBox.click();
         displayedLoginEmail.shouldHave(text(getTestProperty("positive_login")));
@@ -42,5 +44,16 @@ public class LoginPage {
         return page(LoginPage.class);
     }
 
+    public LoginPage loginNegativeTestMethod() {
+        logoMaxPay.shouldBe(visible);
+        emailFieldForLogin.isDisplayed();
+        emailFieldForLogin.setValue(getTestProperty("negative_login"));
+        passwordFieldForLogin.isDisplayed();
+        passwordFieldForLogin.setValue(getTestProperty("positive_password"));
+        buttonSignIn.isDisplayed();
+        buttonSignIn.pressEnter();
+        errorMessege.shouldHave(text("Password or email are incorrect"));
 
+        return page(LoginPage.class);
+    }
 }
