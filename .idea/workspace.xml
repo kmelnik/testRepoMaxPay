@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a522232-c076-4234-89fe-e9bbeced5314" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/test/org/selenide/yourbet/config_Properties_MaxPay/log4j.properties" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/test/org/selenide/yourbet/selenide_maxpay_tests/SwapiRestApiTests.java" afterPath="$PROJECT_DIR$/test/org/selenide/yourbet/selenide_maxpay_tests/SwapiRestApiTests.java" />
     </list>
@@ -39,8 +38,8 @@
       <file leaf-file-name="SwapiRestApiTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/org/selenide/yourbet/selenide_maxpay_tests/SwapiRestApiTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="112" column="31" lean-forward="false" selection-start-line="112" selection-start-column="31" selection-end-line="112" selection-end-column="31" />
+            <state relative-caret-position="-335">
+              <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -823,16 +822,17 @@
       <option name="project" value="LOCAL" />
       <updated>1525876945283</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="MaxPay tests 9 commit 09-05-2018">
+      <created>1525882967098</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1525882967098</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SwapiRestApiTests - 2018.05.09 at 17h 15m 51s.xml">
-      <configuration name="SwapiRestApiTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SwapiRestApiTests - 2018.05.09 at 17h 26m 44s.xml">
-      <configuration name="SwapiRestApiTests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SwapiRestApiTests - 2018.05.09 at 17h 28m 54s.xml">
       <configuration name="SwapiRestApiTests" configurationId="JUnit" />
     </history-entry>
@@ -855,6 +855,12 @@
       <configuration name="SwapiRestApiTests" configurationId="JUnit" />
     </history-entry>
     <history-entry file="SwapiRestApiTests - 2018.05.09 at 18h 45m 09s.xml">
+      <configuration name="SwapiRestApiTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SwapiRestApiTests - 2018.05.09 at 19h 23m 41s.xml">
+      <configuration name="SwapiRestApiTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SwapiRestApiTests - 2018.05.09 at 19h 26m 01s.xml">
       <configuration name="SwapiRestApiTests" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -915,7 +921,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" commit authTest v.1" />
     <MESSAGE value="auth Tests v 2 (positive+negative)" />
     <MESSAGE value="new tests with profile, registration, pay by credit card" />
     <MESSAGE value="updated tests for MainPage 25-04" />
@@ -940,7 +945,8 @@
     <MESSAGE value="MaxPay tests 6 commit 09-05-2018" />
     <MESSAGE value="MaxPay tests 7 commit 09-05-2018" />
     <MESSAGE value="MaxPay tests 8 commit 09-05-2018" />
-    <option name="LAST_COMMIT_MESSAGE" value="MaxPay tests 8 commit 09-05-2018" />
+    <MESSAGE value="MaxPay tests 9 commit 09-05-2018" />
+    <option name="LAST_COMMIT_MESSAGE" value="MaxPay tests 9 commit 09-05-2018" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1227,8 +1233,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/org/selenide/yourbet/selenide_maxpay_tests/SwapiRestApiTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="112" column="31" lean-forward="false" selection-start-line="112" selection-start-column="31" selection-end-line="112" selection-end-column="31" />
+        <state relative-caret-position="-335">
+          <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

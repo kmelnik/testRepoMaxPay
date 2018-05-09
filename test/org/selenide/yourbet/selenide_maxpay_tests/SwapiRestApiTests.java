@@ -1,13 +1,12 @@
 package org.selenide.yourbet.selenide_maxpay_tests;
 
 
-import com.sun.xml.internal.ws.spi.db.BindingContextFactory;
 import org.json.simple.JSONArray;
 
 import org.junit.Test;
 
 import static com.jayway.restassured.RestAssured.get;
-import static com.sun.xml.internal.ws.spi.db.BindingContextFactory.LOGGER;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
@@ -26,13 +25,19 @@ public class SwapiRestApiTests extends DataConfigMaxPay {
     private Logger logger = Logger.getLogger(SwapiRestApiTests.class.getName());
 
     @Test
+
+    /**
+     * При желании, каждую проверку можно обернуть в try-catch + разбить тест на классы с тестами с импользованием паттерна PageObject
+     * Из задания я понял, что это один тест
+     **/
+
     public void getRequestFindSwapiApiData() {
 
         try {
             // выполняем запрос get для доступа ко всем параметрам ответа к базовому урлу АПИ
             Response response = get(getTestProperty("basic_swapi_url"));
             String responseBody = response.getBody().asString();
-            System.out.println("Basic info API is " + responseBody);
+            logger.info("Basic info API is " + responseBody);
 
             // парсим джейсон для доступа к people
             org.json.simple.parser.JSONParser parserBasicInfo = new org.json.simple.parser.JSONParser();
@@ -107,7 +112,6 @@ public class SwapiRestApiTests extends DataConfigMaxPay {
                 logger.info("Assertion Error: Lucke's Planet is not belong to film \"Attack of the Clones\"");
 
             }
-
 
         } catch (org.json.simple.parser.ParseException e) {
             logger.info("Parse Error: " + e);
