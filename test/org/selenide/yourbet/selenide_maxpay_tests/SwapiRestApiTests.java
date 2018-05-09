@@ -1,6 +1,7 @@
 package org.selenide.yourbet.selenide_maxpay_tests;
 
 
+import org.json.simple.JSONArray;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -10,6 +11,8 @@ import static com.jayway.restassured.RestAssured.get;
 import com.jayway.restassured.response.Response;
 
 import org.selenide.yourbet.config_Properties_MaxPay.DataConfigMaxPay;
+
+import java.util.Iterator;
 
 public class SwapiRestApiTests extends DataConfigMaxPay {
 
@@ -41,6 +44,7 @@ public class SwapiRestApiTests extends DataConfigMaxPay {
             Assert.assertEquals(valueLuke, "Luke Skywalker");
 
             String homeworld = (String) result.get("homeworld");
+
             Assert.assertEquals(homeworld, "https://swapi.co/api/planets/1/");
 
             Response responseHomeworld = get(homeworld);
@@ -57,6 +61,22 @@ public class SwapiRestApiTests extends DataConfigMaxPay {
             Assert.assertEquals(valueNamePlanet, "Tatooine");
             Assert.assertEquals(valuesPopulationPlanet, "200000");
 
+
+            JSONArray arrayFilms = (JSONArray) resultHomeworldResponse.get("films");
+            Iterator<String> iterator1stFilmsOfArray = arrayFilms.iterator();
+           // System.out.println("The first film in Luke's planet is "+iterator1stFilmsOfArray.next().toString());
+          /*  while (iterator.hasNext())
+            {
+                System.out.println(iterator.next());
+            }*/
+            Response responseFilmPage = get(iterator1stFilmsOfArray.next().toString());
+            String responseFilmPageBody = responseFilmPage.getBody().asString();
+            System.out.println("First film in Lucke's Homeworld is  " + responseFilmPageBody);
+            org.json.simple.parser.JSONParser parserFilmsResponse = new org.json.simple.parser.JSONParser();
+            org.json.simple.JSONObject resultFilmResponse = (org.json.simple.JSONObject) parserFilmsResponse.parse(responseFilmPageBody);
+            String valueFilmsTitle = (String) resultFilmResponse.get("title");
+
+            Assert.assertEquals(valueFilmsTitle, "Attack of the Clones");
 
         } catch (org.json.simple.parser.ParseException e) {
             System.out.println("Error: " + e);
