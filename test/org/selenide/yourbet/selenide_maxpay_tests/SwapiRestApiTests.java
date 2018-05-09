@@ -77,6 +77,35 @@ public class SwapiRestApiTests extends DataConfigMaxPay {
             String valueFilmsTitle = (String) resultFilmResponse.get("title");
 
             Assert.assertEquals(valueFilmsTitle, "Attack of the Clones");
+try {
+    JSONArray arrayCharacters = (JSONArray) resultFilmResponse.get("characters");
+    Iterator<String> iteratorArrayCharacters = arrayCharacters.iterator();
+
+    while (iteratorArrayCharacters.hasNext()) {
+        // System.out.println(iteratorArrayCharacters.next());
+        Assert.assertEquals(value + getTestProperty("people_id") + "/", iteratorArrayCharacters.next());
+    }
+} catch (org.junit.ComparisonFailure e){
+    e.printStackTrace();
+}
+
+            JSONArray arrayPlanets = (JSONArray) resultFilmResponse.get("planets");
+            Iterator<String> iteratorArrayPlanets = arrayPlanets.iterator();
+
+
+            while (iteratorArrayPlanets.hasNext())
+            {
+
+                Assert.assertEquals(homeworld,iteratorArrayPlanets.next());
+            }
+
+
+
+
+            //System.out.println(iteratorArrayCharacters.hasNext());
+
+
+
 
         } catch (org.json.simple.parser.ParseException e) {
             System.out.println("Error: " + e);
