@@ -38,8 +38,8 @@
       <file leaf-file-name="SwapiRestApiTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/org/selenide/yourbet/selenide_maxpay_tests/SwapiRestApiTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+            <state relative-caret-position="266">
+              <caret line="96" column="38" lean-forward="true" selection-start-line="96" selection-start-column="38" selection-end-line="96" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -796,38 +796,45 @@
       <option name="project" value="LOCAL" />
       <updated>1525854603538</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="MaxPay tests 7 commit 09-05-2018">
+      <created>1525861049972</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1525861049972</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SwapiRestApiTests - 2018.05.09 at 12h 39m 40s.xml">
+    <history-entry file="SwapiRestApiTests - 2018.05.09 at 17h 13m 21s.xml">
       <configuration name="SwapiRestApiTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SwapiRestApiTests - 2018.05.09 at 12h 41m 52s.xml">
+    <history-entry file="SwapiRestApiTests - 2018.05.09 at 17h 14m 08s.xml">
       <configuration name="SwapiRestApiTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SwapiRestApiTests - 2018.05.09 at 12h 42m 38s.xml">
+    <history-entry file="SwapiRestApiTests - 2018.05.09 at 17h 14m 46s.xml">
       <configuration name="SwapiRestApiTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SwapiRestApiTests - 2018.05.09 at 12h 43m 44s.xml">
+    <history-entry file="SwapiRestApiTests - 2018.05.09 at 17h 15m 51s.xml">
       <configuration name="SwapiRestApiTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SwapiRestApiTests - 2018.05.09 at 12h 44m 35s.xml">
+    <history-entry file="SwapiRestApiTests - 2018.05.09 at 17h 26m 44s.xml">
       <configuration name="SwapiRestApiTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SwapiRestApiTests - 2018.05.09 at 12h 45m 40s.xml">
+    <history-entry file="SwapiRestApiTests - 2018.05.09 at 17h 28m 54s.xml">
       <configuration name="SwapiRestApiTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SwapiRestApiTests - 2018.05.09 at 12h 47m 22s.xml">
+    <history-entry file="SwapiRestApiTests - 2018.05.09 at 17h 36m 55s.xml">
       <configuration name="SwapiRestApiTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SwapiRestApiTests - 2018.05.09 at 12h 48m 20s.xml">
+    <history-entry file="SwapiRestApiTests - 2018.05.09 at 17h 37m 58s.xml">
       <configuration name="SwapiRestApiTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SwapiRestApiTests - 2018.05.09 at 13h 03m 11s.xml">
+    <history-entry file="SwapiRestApiTests - 2018.05.09 at 17h 39m 54s.xml">
       <configuration name="SwapiRestApiTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SwapiRestApiTests - 2018.05.09 at 13h 16m 04s.xml">
+    <history-entry file="SwapiRestApiTests - 2018.05.09 at 17h 41m 55s.xml">
       <configuration name="SwapiRestApiTests" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -888,7 +895,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="commit check open site" />
     <MESSAGE value=" commit check open site (refresh code with page object)" />
     <MESSAGE value=" commit authTest v.1" />
     <MESSAGE value="auth Tests v 2 (positive+negative)" />
@@ -913,7 +919,8 @@
     <MESSAGE value="MaxPay tests 4 commit 08-05-2018" />
     <MESSAGE value="MaxPay tests 5 commit 08-05-2018" />
     <MESSAGE value="MaxPay tests 6 commit 09-05-2018" />
-    <option name="LAST_COMMIT_MESSAGE" value="MaxPay tests 6 commit 09-05-2018" />
+    <MESSAGE value="MaxPay tests 7 commit 09-05-2018" />
+    <option name="LAST_COMMIT_MESSAGE" value="MaxPay tests 7 commit 09-05-2018" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1200,8 +1207,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/org/selenide/yourbet/selenide_maxpay_tests/SwapiRestApiTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+        <state relative-caret-position="266">
+          <caret line="96" column="38" lean-forward="true" selection-start-line="96" selection-start-column="38" selection-end-line="96" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -1,18 +1,25 @@
 package org.selenide.yourbet.selenide_maxpay_tests;
 
 
+import com.google.gson.Gson;
 import org.json.simple.JSONArray;
 import org.junit.Assert;
 import org.junit.Test;
 
 import static com.jayway.restassured.RestAssured.get;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 
 import com.jayway.restassured.response.Response;
 
 import org.selenide.yourbet.config_Properties_MaxPay.DataConfigMaxPay;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.ListIterator;
 
 public class SwapiRestApiTests extends DataConfigMaxPay {
 
@@ -41,11 +48,11 @@ public class SwapiRestApiTests extends DataConfigMaxPay {
             String valueLuke = (String) result.get("name");
             // получаем name человека
 
-            Assert.assertEquals(valueLuke, "Luke Skywalker");
+            assertEquals(valueLuke, "Luke Skywalker");
 
             String homeworld = (String) result.get("homeworld");
 
-            Assert.assertEquals(homeworld, "https://swapi.co/api/planets/1/");
+            assertEquals(homeworld, "https://swapi.co/api/planets/1/");
 
             Response responseHomeworld = get(homeworld);
             String responseHomeworldBody = responseHomeworld.getBody().asString();
@@ -58,17 +65,12 @@ public class SwapiRestApiTests extends DataConfigMaxPay {
             String valueNamePlanet = (String) resultHomeworldResponse.get("name");
             String valuesPopulationPlanet = (String) resultHomeworldResponse.get("population");
 
-            Assert.assertEquals(valueNamePlanet, "Tatooine");
-            Assert.assertEquals(valuesPopulationPlanet, "200000");
+            assertEquals(valueNamePlanet, "Tatooine");
+            assertEquals(valuesPopulationPlanet, "200000");
 
 
             JSONArray arrayFilms = (JSONArray) resultHomeworldResponse.get("films");
             Iterator<String> iterator1stFilmsOfArray = arrayFilms.iterator();
-           // System.out.println("The first film in Luke's planet is "+iterator1stFilmsOfArray.next().toString());
-          /*  while (iterator.hasNext())
-            {
-                System.out.println(iterator.next());
-            }*/
             Response responseFilmPage = get(iterator1stFilmsOfArray.next().toString());
             String responseFilmPageBody = responseFilmPage.getBody().asString();
             System.out.println("First film in Lucke's Homeworld is  " + responseFilmPageBody);
@@ -76,35 +78,46 @@ public class SwapiRestApiTests extends DataConfigMaxPay {
             org.json.simple.JSONObject resultFilmResponse = (org.json.simple.JSONObject) parserFilmsResponse.parse(responseFilmPageBody);
             String valueFilmsTitle = (String) resultFilmResponse.get("title");
 
-            Assert.assertEquals(valueFilmsTitle, "Attack of the Clones");
-try {
-    JSONArray arrayCharacters = (JSONArray) resultFilmResponse.get("characters");
-    Iterator<String> iteratorArrayCharacters = arrayCharacters.iterator();
+            assertEquals(valueFilmsTitle, "Attack of the Clones");
 
-    while (iteratorArrayCharacters.hasNext()) {
-        // System.out.println(iteratorArrayCharacters.next());
-        Assert.assertEquals(value + getTestProperty("people_id") + "/", iteratorArrayCharacters.next());
-    }
-} catch (org.junit.ComparisonFailure e){
-    e.printStackTrace();
-}
+            try {
 
-            JSONArray arrayPlanets = (JSONArray) resultFilmResponse.get("planets");
-            Iterator<String> iteratorArrayPlanets = arrayPlanets.iterator();
+                JSONArray arrayCharacters = (JSONArray) resultFilmResponse.get("characters");
+                assertTrue((arrayCharacters).contains(value + getTestProperty("people_id") + "/"));
+               // Iterator<String> iteratorArrayCharacters = arrayCharacters.iterator();
+               /* ListIterator<String> itArP = arrayCharacters.listIterator();
 
+                while (itArP.hasNext()) {
 
-            while (iteratorArrayPlanets.hasNext())
-            {
+                    Assert.assertEquals(value + getTestProperty("people_id") + "/", itArP.next());
 
-                Assert.assertEquals(homeworld,iteratorArrayPlanets.next());
+                }*/
+
+            } catch (java.lang.AssertionError e) {
+                System.out.println(e);
             }
 
 
+            JSONArray arrayPlanets = (JSONArray) resultFilmResponse.get("planets");
+            assertTrue((arrayPlanets).contains(homeworld));
+
+          /*  ListIterator<String> itArPl = arrayPlanets.listIterator();
+
+            while (itArPl.hasNext()) {
+
+              //  assertEquals(homeworld, arrayPlanets);
+
+                assertTrue((arrayPlanets).contains(homeworld));
+            }*/
 
 
-            //System.out.println(iteratorArrayCharacters.hasNext());
 
 
+
+
+          /*  } catch (org.junit.ComparisonFailure e) {
+                System.out.println(e);
+            }*/
 
 
         } catch (org.json.simple.parser.ParseException e) {
