@@ -30,7 +30,7 @@ public class MainPageLoginPossitiveTest extends ActionsWithElements {
     }
     @Test
     public void loginOnPossitiveTest() {
-        ActionsWithElements openURL = open(getTestProperty(""), ActionsWithElements.class);
+        ActionsWithElements openURL = open(getTestProperty("url"), ActionsWithElements.class);
         ActionsWithElements searchLogo = openURL.searchLogoPresent();
         ActionsWithElements loginOn = openURL.loginMethod();
     }
