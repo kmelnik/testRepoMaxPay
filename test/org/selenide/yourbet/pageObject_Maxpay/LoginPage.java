@@ -2,7 +2,6 @@ package org.selenide.yourbet.pageObject_Maxpay;
 
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.support.FindBy;
-import org.selenide.yourbet.selenide_page_object.ActionsWithElements;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.textCaseSensitive;
