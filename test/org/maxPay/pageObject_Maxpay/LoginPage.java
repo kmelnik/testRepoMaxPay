@@ -1,4 +1,4 @@
-package org.selenide.maxPay.pageObject_Maxpay;
+package org.maxPay.pageObject_Maxpay;
 
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.support.FindBy;
@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Configuration.timeout;
 import static com.codeborne.selenide.Selenide.page;
-import static org.selenide.maxPay.config_Properties_MaxPay.DataConfigMaxPay.getTestProperty;
+import static org.maxPay.config_Properties_MaxPay.DataConfigMaxPay.getTestProperty;
 
 public class LoginPage {
 

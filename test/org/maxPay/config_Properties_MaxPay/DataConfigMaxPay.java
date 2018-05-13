@@ -1,4 +1,4 @@
-package org.selenide.maxPay.config_Properties_MaxPay;
+package org.maxPay.config_Properties_MaxPay;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -11,7 +11,7 @@ public class DataConfigMaxPay {
 
     static {
         try {
-            fileInputStream = new FileInputStream("test/org/selenide/maxPay/config_Properties_MaxPay/config.MaxPay.properties");
+            fileInputStream = new FileInputStream("test/org/maxPay/config_Properties_MaxPay/config.MaxPay.properties");
             PROPERTIES = new Properties();
             PROPERTIES.load(fileInputStream);
         } catch (IOException e) {

@@ -1,4 +1,4 @@
-package org.selenide.maxPay.selenide_maxpay_tests;
+package org.maxPay.api_maxpay_tests;
 
 
 import org.json.simple.JSONArray;
@@ -15,7 +15,7 @@ import static org.junit.Assert.assertTrue;
 
 import com.jayway.restassured.response.Response;
 
-import org.selenide.maxPay.config_Properties_MaxPay.DataConfigMaxPay;
+import org.maxPay.config_Properties_MaxPay.DataConfigMaxPay;
 
 
 import java.util.Iterator;
