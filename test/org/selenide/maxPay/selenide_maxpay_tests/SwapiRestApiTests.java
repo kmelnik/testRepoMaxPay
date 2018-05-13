@@ -1,4 +1,4 @@
-package org.selenide.yourbet.selenide_maxpay_tests;
+package org.selenide.maxPay.selenide_maxpay_tests;
 
 
 import org.json.simple.JSONArray;
@@ -7,13 +7,15 @@ import org.junit.Test;
 
 import static com.jayway.restassured.RestAssured.get;
 
+
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 
 
 import com.jayway.restassured.response.Response;
 
-import org.selenide.yourbet.config_Properties_MaxPay.DataConfigMaxPay;
+import org.selenide.maxPay.config_Properties_MaxPay.DataConfigMaxPay;
 
 
 import java.util.Iterator;
@@ -119,6 +121,7 @@ public class SwapiRestApiTests extends DataConfigMaxPay {
 
 
     }
+
 }
 
 

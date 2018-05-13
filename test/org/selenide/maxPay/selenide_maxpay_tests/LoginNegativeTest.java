@@ -1,17 +1,17 @@
-package org.selenide.yourbet.selenide_maxpay_tests;
+package org.selenide.maxPay.selenide_maxpay_tests;
 
 import com.codeborne.selenide.WebDriverRunner;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.selenide.yourbet.pageObject_Maxpay.LoginPage;
+import org.selenide.maxPay.pageObject_Maxpay.LoginPage;
 
 
 import static com.codeborne.selenide.Configuration.browser;
 import static com.codeborne.selenide.Selenide.open;
-import static org.selenide.yourbet.config_Properties_MaxPay.DataConfigMaxPay.getTestProperty;
+import static org.selenide.maxPay.config_Properties_MaxPay.DataConfigMaxPay.getTestProperty;
 
-public class LoginPositiveTest extends LoginPage {
+public class LoginNegativeTest extends LoginPage {
 
 
     @Before
@@ -33,7 +33,7 @@ public class LoginPositiveTest extends LoginPage {
     @Test
     public void loginOnPossitiveTest() {
         LoginPage openURL = open(getTestProperty("url_login_page"), LoginPage.class);
-        LoginPage loginOn = openURL.loginPositiveTestMethod();
+        LoginPage loginOn = openURL.loginNegativeTestMethod();
     }
     @After
     public void testShutDown() {
@@ -41,4 +41,3 @@ public class LoginPositiveTest extends LoginPage {
         WebDriverRunner.closeWebDriver();
     }
 }
-
