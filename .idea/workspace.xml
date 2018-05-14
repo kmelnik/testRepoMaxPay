@@ -4,8 +4,6 @@
     <list default="true" id="7a522232-c076-4234-89fe-e9bbeced5314" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/test/org/maxPay/api_maxpay_tests/Main.java" afterPath="$PROJECT_DIR$/test/org/maxPay/api_maxpay_tests/Main.java" />
-      <change beforePath="$PROJECT_DIR$/test/org/maxPay/api_maxpay_tests/SwapiRestApiTests.java" afterPath="$PROJECT_DIR$/test/org/maxPay/api_maxpay_tests/SwapiRestApiTests.java" />
-      <change beforePath="$PROJECT_DIR$/test/org/maxPay/config_Properties_MaxPay/config.MaxPay.properties" afterPath="$PROJECT_DIR$/test/org/maxPay/config_Properties_MaxPay/config.MaxPay.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,10 +47,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SwapiRestApiTests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SwapiRestApiTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/org/maxPay/api_maxpay_tests/SwapiRestApiTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
+            <state relative-caret-position="335">
               <caret line="49" column="86" lean-forward="true" selection-start-line="49" selection-start-column="86" selection-end-line="49" selection-end-column="86" />
               <folding />
             </state>
@@ -71,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/org/maxPay/api_maxpay_tests/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+            <state relative-caret-position="-216">
+              <caret line="63" column="46" lean-forward="false" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -301,7 +299,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SwapiRestApiTests (1)">
+  <component name="RunManager" selected="JUnit.Main">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -511,8 +509,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.SwapiRestApiTests (1)" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.Main" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.Main" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SwapiRestApiTests (1)" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.Main.assertNameAndPopulationPlanet" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.Main.assertAttackofClonesTitle" />
         <item index="4" class="java.lang.String" itemvalue="Application.Main" />
@@ -532,13 +530,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1521109955887</updated>
-    </task>
-    <task id="LOCAL-00006" summary=" commit check open site (refresh code with page object)">
-      <created>1521802805513</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1521802805513</updated>
     </task>
     <task id="LOCAL-00007" summary=" commit check open site (refresh code with page object)">
       <created>1521809102159</created>
@@ -876,16 +867,17 @@
       <option name="project" value="LOCAL" />
       <updated>1526290648133</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="new changes classes Main, JsonUtils 14-05-2018 2d commit">
+      <created>1526310982833</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1526310982834</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Main - 2018.05.14 at 17h 22m 21s.xml">
-      <configuration name="Main" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Main - 2018.05.14 at 17h 24m 56s.xml">
-      <configuration name="Main" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Main - 2018.05.14 at 18h 03m 45s.xml">
       <configuration name="Main" configurationId="JUnit" />
     </history-entry>
@@ -893,6 +885,9 @@
       <configuration name="Main" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Main - 2018.05.14 at 18h 10m 27s.xml">
+      <configuration name="Main" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Main - 2018.05.14 at 18h 19m 17s.xml">
       <configuration name="Main" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Main_assertAttackofClonesTitle - 2018.05.14 at 17h 44m 36s.xml">
@@ -908,6 +903,9 @@
       <configuration name="SwapiRestApiTests (1)" configurationId="JUnit" />
     </history-entry>
     <history-entry file="SwapiRestApiTests_(1) - 2018.05.14 at 18h 15m 08s.xml">
+      <configuration name="SwapiRestApiTests (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SwapiRestApiTests_(1) - 2018.05.14 at 18h 17m 01s.xml">
       <configuration name="SwapiRestApiTests (1)" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -968,7 +966,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="random login Reg test 02-05-2018 (final)" />
     <MESSAGE value="updated locators 03-05-2018" />
     <MESSAGE value="ConfigData ExelDriver 04-05-2018" />
     <MESSAGE value="ConfigData Property files 04-05-2018" />
@@ -993,7 +990,8 @@
     <MESSAGE value="Refactor Package mass refactoring 13-05-2018" />
     <MESSAGE value="new experement classes Main, JsonUtils 13-05-2018" />
     <MESSAGE value="new changes classes Main, JsonUtils 14-05-2018" />
-    <option name="LAST_COMMIT_MESSAGE" value="new changes classes Main, JsonUtils 14-05-2018" />
+    <MESSAGE value="new changes classes Main, JsonUtils 14-05-2018 2d commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="new changes classes Main, JsonUtils 14-05-2018 2d commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1178,6 +1176,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/org/maxPay/config_Properties_MaxPay/config.MaxPay.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="9" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/org/maxPay/config_Properties_MaxPay/JsonUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -1188,29 +1194,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/org/maxPay/config_Properties_MaxPay/config.MaxPay.properties">
+    <entry file="file://$PROJECT_DIR$/test/org/maxPay/api_maxpay_tests/SwapiRestApiTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="9" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        <state relative-caret-position="335">
+          <caret line="49" column="86" lean-forward="true" selection-start-line="49" selection-start-column="86" selection-end-line="49" selection-end-column="86" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/org/maxPay/api_maxpay_tests/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+        <state relative-caret-position="-216">
+          <caret line="63" column="46" lean-forward="false" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/org/maxPay/api_maxpay_tests/SwapiRestApiTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="49" column="86" lean-forward="true" selection-start-line="49" selection-start-column="86" selection-end-line="49" selection-end-column="86" />
-          <folding />
         </state>
       </provider>
     </entry>

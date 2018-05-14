@@ -29,7 +29,7 @@ public class Main extends JsonUtils {
                 Response responsePeopleID = get(getTestProperty("url_root_people") + getTestProperty("people_id"));
                 String responseBodyPeopleID = responsePeopleID.getBody().asString();
                 JSONParser parserPeopleID = new JSONParser();
-                JSONObject resultPeople = (org.json.simple.JSONObject) parserPeopleID.parse(responseBodyPeopleID);
+                JSONObject resultPeople = (JSONObject) parserPeopleID.parse(responseBodyPeopleID);
 
                 String valueName = (String) resultPeople.get("name");
 
@@ -55,13 +55,13 @@ public class Main extends JsonUtils {
                 Response responsePeopleID = get(getTestProperty("url_root_people") + getTestProperty("people_id"));
                 String responseBodyPeopleID = responsePeopleID.getBody().asString();
                 JSONParser parserPeopleID = new JSONParser();
-                JSONObject resultPeople = (org.json.simple.JSONObject) parserPeopleID.parse(responseBodyPeopleID);
+                JSONObject resultPeople = (JSONObject) parserPeopleID.parse(responseBodyPeopleID);
                 String homeworld = (String) resultPeople.get("homeworld");
                 assertEquals(homeworld, "https://swapi.co/api/planets/1/");
 
                 Response responseHomeworld = get(homeworld);
                 String responseHomeworldBody = responseHomeworld.getBody().asString();
-                JSONObject resultHomeworld = (org.json.simple.JSONObject) parserPeopleID.parse(responseHomeworldBody);
+                JSONObject resultHomeworld = (JSONObject) parserPeopleID.parse(responseHomeworldBody);
 
                 String valueNamePlanet = (String) resultHomeworld.get("name");
                 assertEquals(valueNamePlanet, "Tatooine");
