@@ -1,37 +1,48 @@
 package org.maxPay.api_maxpay_tests;
 
+import com.jayway.restassured.response.Response;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+import org.junit.Test;
 import org.maxPay.config_Properties_MaxPay.JsonUtils;
 
 import java.net.URL;
+import java.util.logging.Logger;
 
-public class Main {
-    /**
-     * Для простоты и удобства используем уже сформированную строку
-     * с запросом погоды в Лондоне на данный момент
-     * <p>
-     * другие примеры запросов можете глянуть здесь
-     * {@see <a href="http://openweathermap.org/current">openweathermap</a>}
-     * также Вам понадобится свой API ключ
-     */
-    public static final String WEATHER_URL ="https://swapi.co/api/people/1";
-          /*  "http://api.openweathermap.org/data/2.5/weather?q=London,uk" +
-                    "&units=metric&appid=241de9349721df959d8800c12ca4f1f3"; */
+import static com.jayway.restassured.RestAssured.get;
+import static org.junit.Assert.assertEquals;
+import static org.maxPay.config_Properties_MaxPay.DataConfigMaxPay.getTestProperty;
 
-    public static void main(String[] args) {
-        // создаем URL из строки
-        URL url = JsonUtils.createUrl(WEATHER_URL);
+public class Main extends JsonUtils {
+    private Logger logger = Logger.getLogger(SwapiRestApiTests.class.getName());
 
-        // загружаем Json в виде Java строки
-        String resultJson = JsonUtils.parseUrl(url);
+    @Test
+
+    public void findLuckeSkywalker () {
+
+        try {
+            try {
+                Response responsePeopleID = get(getTestProperty("url_root_people") + getTestProperty("people_id"));
+                String responseBodyPeopleID = responsePeopleID.getBody().asString();
+                JSONParser parserBasicInfo = new JSONParser();
+                JSONObject resultPeople = (org.json.simple.JSONObject) parserBasicInfo.parse(responseBodyPeopleID);
+
+                String valueName = (String) resultPeople.get("name");
+
+                assertEquals(valueName, "Luke Skywalker");
+                logger.info("Assert passed: \"Name\" belongs to \"Luke Skywalker\"");
+            } catch (java.lang.AssertionError e) {
+                logger.info("Assertion Error: "+e);
+
+            }
+
+        }
+        catch (ParseException e) {
+            logger.info("Parse Error: " + e);
+            }
 
 
-        System.out.println("Полученный JSON:\n" + resultJson);
 
-        // парсим полученный JSON и печатаем его на экран
-       JsonUtils.parseCurrentWeatherJson(resultJson);
-
-      /*  // формируем новый JSON объект из нужных нам погодных данных
-        String json = JsonUtils.buildWeatherJson();
-        System.out.println("Созданный нами JSON:\n" + json);*/
     }
 }
