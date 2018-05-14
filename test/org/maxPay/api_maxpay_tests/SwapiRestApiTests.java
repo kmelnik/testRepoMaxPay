@@ -47,7 +47,7 @@ public class SwapiRestApiTests extends DataConfigMaxPay {
             String value = (String) resultPeople.get("people");
 
             // получаем параметры ответа по Люку Скайволкеру
-            Response responseResultPeople = get(value + getTestProperty("people_id"));
+            Response responseResultPeople = get(value + getTestProperty("id_people"));
             String responseBodyPeople = responseResultPeople.getBody().asString();
             logger.info("Searched people is  " + responseBodyPeople);
 
@@ -97,7 +97,7 @@ public class SwapiRestApiTests extends DataConfigMaxPay {
             try {
 
                 JSONArray arrayCharacters = (JSONArray) resultFilmResponse.get("characters");
-                assertTrue((arrayCharacters).contains(value + getTestProperty("people_id") + "/"));
+                assertTrue((arrayCharacters).contains(value + getTestProperty("people_id")));
                 logger.info("Assert passed: Lucke Skywalker is belong to this film \"Attack of the Clones\"");
 
             } catch (java.lang.AssertionError e) {
